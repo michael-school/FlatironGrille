@@ -1,3 +1,25 @@
 h1{
     color:blue;
 }
+.center {
+    display: block; 
+    margin-right: auto;
+    margin-left: auto;
+}
+footer {
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+footer .logo {
+    border-radius:50%;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-instagram {
+    color: #b8358d;
+}
+.social a {
+    font-size: 2.5em;
+    padding: 1rem;
+}
