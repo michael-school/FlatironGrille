@@ -15,12 +15,12 @@ header .logo {
     border-radius: 50%;
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .navbar-nav{
     text-align: right;
 }
-h1{
-    color:blue;
-}
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 .center {
@@ -29,9 +29,13 @@ h1{
     margin-left: auto;
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 nav {
     background-color: #212121
 }
+=======
+/*--- Footer --*/
+>>>>>>> Stashed changes
 =======
 /*--- Footer --*/
 >>>>>>> Stashed changes
@@ -58,8 +62,11 @@ footer .logo {
     width: 100%;
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .column-image {
 =======
+=======
+>>>>>>> Stashed changes
 .carousel-caption h1 {
     position: relative;
     top: 50%;
