@@ -38,7 +38,9 @@ footer .logo {
     margin-right: auto;
     display: block;
 }
-.
+.column-padding {
+    padding: 2rem;
+}
 /*--- Fixed Background Image --*/
 figure {
     position: relative;
