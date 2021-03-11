@@ -1,22 +1,40 @@
-
+/*--- Font --*/ 
+@font-face {
+    font-family: comfortaaMedium;
+    src: url('fonts/Comfortaa/static/Comfortaa-Medium.ttf');
+}
+@font-face {
+    font-family: comfortaaLight;
+    src: url(fonts/Comfortaa/static/Comfortaa-Light.ttf);
+}
+.carousel h1, h3 {
+    font-family: comfortaaMedium;
+}
 header .logo {
     width: 5rem;
     border-radius: 50%;
 }
+<<<<<<< Updated upstream
 .navbar-nav{
     text-align: right;
 }
 h1{
     color:blue;
 }
+=======
+>>>>>>> Stashed changes
 .center {
     display: block; 
     margin-right: auto;
     margin-left: auto;
 }
+<<<<<<< Updated upstream
 nav {
     background-color: #212121
 }
+=======
+/*--- Footer --*/
+>>>>>>> Stashed changes
 footer {
     color: #d5d5d5;
     background-color: #212121;
@@ -35,10 +53,31 @@ footer .logo {
     font-size: 2.5em;
     padding: 1rem;
 }
+/*--- Carousel --*/
 .carousel-inner img {
     width: 100%;
 }
+<<<<<<< Updated upstream
 .column-image {
+=======
+.carousel-caption h1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-250%);
+}
+.carousel-caption h3 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-650%);
+}
+.carousel-caption button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-400%);
+}
+/*--- 2 Column --*/
+.column {
+>>>>>>> Stashed changes
     height: 300px;
     width: 400px;
     margin-left: auto;
