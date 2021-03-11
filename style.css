@@ -11,8 +11,12 @@ h1{
     margin-right: auto;
     margin-left: auto;
 }
+nav {
+    background-color: #212121
+}
 footer {
     color: #d5d5d5;
+    background-color: #212121;
     padding-top: 2rem;
 }
 footer .logo {
@@ -40,6 +44,7 @@ footer .logo {
 }
 .column-padding {
     padding: 2rem;
+    background-color: #212121;
 }
 .column-text {
     color: white;
