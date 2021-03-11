@@ -3,6 +3,9 @@ header .logo {
     width: 5rem;
     border-radius: 50%;
 }
+.navbar-nav{
+    text-align: right;
+}
 h1{
     color:blue;
 }
