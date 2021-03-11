@@ -41,6 +41,9 @@ footer .logo {
 .column-padding {
     padding: 2rem;
 }
+.column-text {
+    color: white;
+}
 /*--- Fixed Background Image --*/
 figure {
     position: relative;
