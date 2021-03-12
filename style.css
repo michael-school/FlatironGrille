@@ -80,7 +80,6 @@ footer .logo {
 }
 /*--- 2 Column --*/
 .column-image {
-    height: 300px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -242,3 +241,10 @@ input[type=checkbox]:checked + label {
   font-style: normal;
 }
 /*--- About Page --*/
+.top-buffer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.image-width {
+    width: 100%;
+}
