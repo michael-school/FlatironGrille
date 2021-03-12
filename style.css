@@ -84,8 +84,7 @@ footer .logo {
 }
 /*--- 2 Column --*/
 .column-image {
-    height: 300px;
-    width: 400px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -97,6 +96,7 @@ footer .logo {
 
 .column-text {
     color: white;
+    padding-top: 1rem;
 }
 /*--- Fixed Background Image --*/
 figure {
