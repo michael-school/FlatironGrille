@@ -245,3 +245,7 @@ input[type=checkbox]:checked + label {
   font-style: normal;
 }
 /*--- About Page --*/
+.top-buffer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
