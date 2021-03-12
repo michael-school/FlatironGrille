@@ -284,6 +284,7 @@ input[type=checkbox]:checked + label {
 }
 .image-width {
     width: 100%;
+}
 .text-center {
     text-align: center;
 }
