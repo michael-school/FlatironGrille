@@ -7,7 +7,7 @@
     font-family: comfortaaLight;
     src: url(fonts/Comfortaa/static/Comfortaa-Light.ttf);
 }
-.carousel h1, h3 {
+.carousel-caption h1, h3 {
     font-family: comfortaaMedium;
 }
 .navbar-font {
@@ -53,22 +53,18 @@ footer .logo {
     width: 100%;
 }
 .carousel-caption h1 {
-    position: relative;
-    top: 50%;
-    transform: translateY(-300%);
-    bottom: initial;
+    
+    transform: translateY(70%);
+    font-size: 2em;
 }
 .carousel-caption h3 {
-    position: relative;
-    top: 50%;
-    transform: translateY(-775%);
-    bottom: initial;
+    transform: translateY(100%);
+    font-size:1em;
 }
 .carousel-caption button {
-    position: relative;
-    top: 50%;
-    transform: translateY(-500%);
-    bottom: initial;
+    transform: translateY(70%);
+    font-size:1em;
+    padding: .4em;
 }
 .btn-primary {
     background-color:#b00012;
