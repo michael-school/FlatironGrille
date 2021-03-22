@@ -18,7 +18,7 @@ header .logo {
     width: 5rem;
     border-radius: 50%;
 }
-.navbar-nav {
+header .navbar-nav {
     text-align: right;
 }
 .center {
@@ -26,7 +26,7 @@ header .logo {
     margin-right: auto;
     margin-left: auto;
 }
-nav {
+header nav {
     background-color: #212121
 }
 /*--- Footer --*/
@@ -287,4 +287,18 @@ input[type=checkbox]:checked + label {
 }
 .text-center {
     text-align: center;
+}
+
+/* menus */
+.menu .card-body{
+    text-align: center;
+}
+.menu{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+    /* menu tabs */
+.menu-control{
+   margin-left:auto;
+   margin-right:auto;
 }

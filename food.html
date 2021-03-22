@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- Navigation -->
-	      <nav class="navbar navbar-expand-md navbar-dark sticky-top navbar-font">
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top navbar-font">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img class="logo" src="img/fg_logo.png" alt="flatiron logo">
@@ -47,58 +47,79 @@
         </nav>
     </header>
     <main>
-        <div class="text-center">
-            <p>Our Menu</p>>
-            <a href="food.html"><button type="button" class="btn btn-primary btn-lg">Food Menu</button></a>
-            <a href="drink.html"><button type="button" class="btn btn-primary btn-lg">Drink Menu</button></a>
-        </div>
-        <div class="container-fluid padding">
-            <div class="row padding">
-                    <div class="col-lg-4 center">
+        <nav class="menu-control">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="food.html">Food Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="drink.html">Drink Menu</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid menu">
+            <div class="row gx-5">
+                <div class="col-lg-6">
+                    <div class="row">
                         <div class="card">
                             <div class="card-body">
                                 <h4 style="text-align: center;" class="card-title">Appetizers</h4>
-                                <p class="card-text">Sonomo Fried Green Tomatoes........................................$9</p>
+                                <p class="card-text">Sonomo Fried Green
+                                    Tomatoes........................................$9</p>
                                 <p> </p>
                                 <hr>
-                                <p class="card-text">Charleston Crab cakes....................................................$15</p>
+                                <p class="card-text">Charleston Crab
+                                    cakes....................................................$15</p>
                                 <p> </p>
                                 <hr>
-                                <p class="card-text">Jumbo Shrimp.......................................(10)$22.........(5)$11</p>
+                                <p class="card-text">Jumbo
+                                    Shrimp.......................................(10)$22.........(5)$11</p>
                                 <p> </p>
                                 <hr>
-                                <p class="card-text">Fresh Focaccia Bread.......................................................$5</p>
+                                <p class="card-text">Fresh Focaccia
+                                    Bread.......................................................$5</p>
                                 <p> </p>
-                                <hr>
-                                <h4 style="text-align: center;" class="card-title">Specialty Salads</h4>
-                                <p class="card-text">Caprese............................................................................$9</p>
-                                <p> </p>
-                                <hr>
-                                <p class="card-text">Bleu Cheese Wedge.........................................................$9</p>
-                                <p> </p>
-                                <hr>
-                                <p class="card-text">Grilled Caesar..................................................................$12</p>
-                                <p> </p>
-                                <hr>
-                                <p class="card-text">Southern Salad.................................................................$9</p>
-                                <p> </p>
-                                <hr>
-                                <p class="card-text">Spring Salad....................................................................$10</p>
-                                <hr>
-                                <p> &emsp; &emsp; &emsp; Add: Chicken $8, Shrimp $11, or Salmon $14</p>
-                                <h6 style="text-align: center;">Dressings:</h6>
-                                <p>Bleu Cheese, Ranch, Poppyseed, Balsamic Vinagrette, Honey Mustard, Wine & Cheese and Oil & Vinegar</p>
-                                <a href="#" class="btn btn-outline-secondary">More Appetizers</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 center">
+                    <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Menu</h4>
-                                <p class="card-text">Sonomo Fried Green Tomatoes</p>
+                                <h4 class="card-title">Specialty Salads</h4>
+                                <p class="card-text">
+                                    Caprese............................................................................$9</p>
+                                <p> </p>
+                                <hr>
+                                <p class="card-text">Bleu Cheese
+                                    Wedge.........................................................$9</p>
+                                <p> </p>
+                                <hr>
+                                <p class="card-text">Grilled
+                                    Caesar..................................................................$12</p>
+                                <p> </p>
+                                <hr>
+                                <p class="card-text">Southern
+                                    Salad.................................................................$9</p>
+                                <p> </p>
+                                <hr>
+                                <p class="card-text">Spring
+                                    Salad....................................................................$10</p>
+                                <hr>
+                                <p> &emsp; &emsp; &emsp; Add: Chicken $8, Shrimp $11, or Salmon $14</p>
+                                <h6>Dressings:</h6>
+                                <p>Bleu Cheese, Ranch, Poppyseed, Balsamic Vinagrette, Honey Mustard, Wine & Cheese and Oil &
+                                    Vinegar</p>
                                 <a href="#" class="btn btn-outline-secondary">More Appetizers</a>
-                            </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="menu card">
+                        <div class="card-body">
+                            <h4 class="card-title">Menu</h4>
+                            <p class="card-text">Sonomo Fried Green Tomatoes</p>
+                            <a href="#" class="btn btn-outline-secondary">More Appetizers</a>
                         </div>
                     </div>
                 </div>
@@ -106,4 +127,5 @@
         </div>
     </main>
 </body>
+
 </html>
