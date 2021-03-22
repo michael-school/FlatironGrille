@@ -178,6 +178,15 @@ body {
     color: #9b9b9b;
     line-height: 1.5;
 }
+/*--- Events ---*/
+.events {
+    color: white;
+    background-color: #212121;
+}
+.events-title {
+    font-family: comfortaaMedium;
+    font-size: 4em
+}
 /*--- Inputs --*/
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
