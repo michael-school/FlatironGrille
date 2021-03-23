@@ -321,16 +321,28 @@ input[type=checkbox]:checked + label {
 }
 
 /* Salads */
-.extra-salad-info h6{
+.extra-salad-info h6 {
     margin-left:1.5rem;
 }
-.extra-salad-info ul{
+.extra-salad-info ul {
     list-style: none;
     margin-left: 1.2rem;
 }
-.extra-salad-info p{
+.extra-salad-info p {
     margin-left:3em;
 }
 .extra-salad-info {
     text-align: left;
+}
+ul, li{
+    list-style: none;
+    padding-left: 0;
+}
+.food-item {
+    text-align:left;
+    margin-left: 1em
+}
+.food-price {
+    text-align: right;
+    margin-right: 1em
 }
