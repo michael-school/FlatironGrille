@@ -177,6 +177,10 @@ body {
     font-size: 20px;
     color: #9b9b9b;
     line-height: 1.5;
+    text-align: center;
+}
+.input-container label{
+    font-family:comfortaaMedium;
 }
 /*--- Events ---*/
 .events {
@@ -306,6 +310,9 @@ input[type=checkbox]:checked + label {
     padding-left: 15%;
     padding-right: 15%;
 }
+.menu .card{
+    margin-bottom: 1em;
+}
     /* menu tabs */
 .menu-control{
     font-size:1.2em;
@@ -318,6 +325,9 @@ input[type=checkbox]:checked + label {
 }
 .menu-control .nav-link{
     color:#b00012;
+}
+.menu-control .nav-link:hover:not(.active){
+    color:#92000f;
 }
 
 /* Salads */
