@@ -320,10 +320,17 @@ input[type=checkbox]:checked + label {
     color:#b00012;
 }
 
-#lineHeight {
-    line-height: 30%;
+/* Salads */
+.extra-salad-info h6{
+    margin-left:1.5rem;
 }
-.left {
-    block: display;
+.extra-salad-info ul{
+    list-style: none;
+    margin-left: 1.2rem;
+}
+.extra-salad-info p{
+    margin-left:3em;
+}
+.extra-salad-info {
     text-align: left;
 }
