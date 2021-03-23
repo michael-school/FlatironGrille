@@ -260,6 +260,7 @@ textarea {
 }
 .submit-btn:hover {
     transform: translateY(1px);
+    background-color: #3878e6;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
               0 1px 1px 0 rgba(0,0,0,0.09);
 }
@@ -307,10 +308,18 @@ input[type=checkbox]:checked + label {
 }
     /* menu tabs */
 .menu-control{
-   margin-left:auto;
-   margin-right:auto;
+    font-size:1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-/*--- Food Menu --*/
+.menu-control .nav-link.active{
+    background-color: #b00012;
+}
+.menu-control .nav-link{
+    color:#b00012;
+}
+
 #lineHeight {
     line-height: 30%;
 }
