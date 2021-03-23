@@ -314,3 +314,7 @@ input[type=checkbox]:checked + label {
 #lineHeight {
     line-height: 30%;
 }
+.left {
+    block: display;
+    text-align: left;
+}
