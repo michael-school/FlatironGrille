@@ -307,10 +307,18 @@ input[type=checkbox]:checked + label {
 }
     /* menu tabs */
 .menu-control{
-   margin-left:auto;
-   margin-right:auto;
+    font-size:1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-/*--- Food Menu --*/
+.menu-control .nav-link.active{
+    background-color: #b00012;
+}
+.menu-control .nav-link{
+    color:#b00012;
+}
+
 #lineHeight {
     line-height: 30%;
 }
