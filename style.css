@@ -313,6 +313,19 @@ input[type=checkbox]:checked + label {
 .menu .card{
     margin-bottom: 1em;
 }
+.food-item {
+    text-align:left;
+    margin-left: 1em
+}
+.food-price {
+    text-align: right;
+    margin-right: 1em
+}
+.card ul{
+    list-style: none;
+    padding-left: 0;
+}
+
     /* menu tabs */
 .menu-control{
     font-size:1.2em;
@@ -332,27 +345,13 @@ input[type=checkbox]:checked + label {
 
 /* Salads */
 .extra-salad-info h6 {
-    margin-left:1.5rem;
+    margin-left:1.5em;
 }
 .extra-salad-info ul {
     list-style: none;
-    margin-left: 1.2rem;
-}
-.extra-salad-info p {
-    margin-left:3em;
+    margin-left: 3em;
 }
 .extra-salad-info {
     text-align: left;
 }
-ul, li{
-    list-style: none;
-    padding-left: 0;
-}
-.food-item {
-    text-align:left;
-    margin-left: 1em
-}
-.food-price {
-    text-align: right;
-    margin-right: 1em
-}
+
