@@ -339,7 +339,7 @@ input[type=checkbox]:checked + label {
     padding-left: 0;
 }
 .card-text p {
-    width: 95%;
+    width: 90%;
     text-align: left;
     margin-top: 0;
     margin-bottom: 0;
