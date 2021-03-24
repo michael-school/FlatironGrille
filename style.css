@@ -334,7 +334,24 @@ input[type=checkbox]:checked + label {
     list-style: none;
     padding-left: 0;
 }
-
+.card-text p {
+    width: 95%;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .8em;
+    margin-left: 2em;
+}
+.extra-menu-info h6 {
+    margin-left:1.5em;
+}
+.extra-menu-info ul {
+    list-style: none;
+    margin-left: 3em;
+}
+.extra-menu-info {
+    text-align: left;
+}
     /* menu tabs */
 .menu-control{
     font-size:1.2em;
@@ -352,15 +369,5 @@ input[type=checkbox]:checked + label {
     color:#92000f;
 }
 
-/* Salads */
-.extra-salad-info h6 {
-    margin-left:1.5em;
-}
-.extra-salad-info ul {
-    list-style: none;
-    margin-left: 3em;
-}
-.extra-salad-info {
-    text-align: left;
-}
+
 
