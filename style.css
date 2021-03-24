@@ -195,6 +195,10 @@ figure {
     font-family:comfortaaLight;
 }
 /*--- Events ---*/
+.events {
+    background-color: black;
+    color: white;
+}
 
 .events-title {
     font-family: comfortaaMedium;
