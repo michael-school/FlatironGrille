@@ -13,6 +13,22 @@
 .navbar-font {
     font-family: comfortaaMedium !important;
 }
+.menuTab-font {
+    font-family: comfortaaMedium;
+}
+.card-text {
+    font-family: comfortaaLight;
+}
+.card-title {
+    font-family: comfortaaMedium;
+}
+.carousel-caption button {
+    font-family: comfortaaMedium
+}
+body {
+    background-color: #000;
+}
+
 /*--- Navigation Bar --*/
 header .logo {
     width: 5rem;
@@ -118,7 +134,6 @@ footer .logo {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 .column-padding {
     padding: 2rem;
@@ -159,9 +174,6 @@ figure {
     will-change: transform;
 }
 /*--- Contact Us Page --*/
-body {
-    background-color: #000000;
-}
 
 .contact h1 {
     font-family: comfortaaMedium;
@@ -172,7 +184,7 @@ body {
 }
 
 .contact h4 {
-    font-family: comfortaaMedium;
+    font-family: comfortaaLight;
     font-weight: 400;
     font-size: 20px;
     color: #9b9b9b;
@@ -180,13 +192,10 @@ body {
     text-align: center;
 }
 .input-container label{
-    font-family:comfortaaMedium;
+    font-family:comfortaaLight;
 }
 /*--- Events ---*/
-.events {
-    color: white;
-    background-color: black;
-}
+
 .events-title {
     font-family: comfortaaMedium;
     font-size: 72px
