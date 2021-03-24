@@ -13,6 +13,18 @@
 .navbar-font {
     font-family: comfortaaMedium !important;
 }
+.menuTab-font {
+    font-family: comfortaaMedium;
+}
+.card-text {
+    font-family: comfortaaLight;
+}
+.card-title {
+    font-family: comfortaaMedium;
+}
+.carousel-caption button {
+    font-family: comfortaaMedium
+}
 /*--- Navigation Bar --*/
 header .logo {
     width: 5rem;
@@ -172,7 +184,7 @@ body {
 }
 
 .contact h4 {
-    font-family: comfortaaMedium;
+    font-family: comfortaaLight;
     font-weight: 400;
     font-size: 20px;
     color: #9b9b9b;
@@ -180,7 +192,7 @@ body {
     text-align: center;
 }
 .input-container label{
-    font-family:comfortaaMedium;
+    font-family:comfortaaLight;
 }
 /*--- Events ---*/
 .events {
