@@ -185,11 +185,11 @@ body {
 /*--- Events ---*/
 .events {
     color: white;
-    background-color: #212121;
+    background-color: black;
 }
 .events-title {
     font-family: comfortaaMedium;
-    font-size: 4em
+    font-size: 72px
 }
 /*--- Inputs --*/
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
