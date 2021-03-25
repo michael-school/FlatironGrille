@@ -25,6 +25,18 @@
 .carousel-caption button {
     font-family: comfortaaMedium
 }
+.column-text h2 {
+    font-family: comfortaaMedium;
+}
+.column-text p {
+    font-family: comfortaaLight;
+}
+.footer-font h5 {
+    font-family: comfortaaMedium;
+}
+.footer-font p {
+    font-family: comfortaaLight;
+}
 body {
     background-color: #000;
 }
