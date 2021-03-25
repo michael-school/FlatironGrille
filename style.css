@@ -342,11 +342,16 @@ input[type=checkbox]:checked + label {
 }
 .menu-item {
     text-align:left;
-    margin-left: 1em
+    margin-left: 1em;
 }
 .menu-price {
     text-align: right;
-    margin-right: 1em
+    margin-right: 1em;
+}
+.drink-price-headers{
+    text-align: right;
+    margin-bottom: .5em;
+    font-size:.9em;
 }
 .card ul{
     list-style: none;
