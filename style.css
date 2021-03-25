@@ -199,7 +199,9 @@ figure {
     background-color: black;
     color: white;
 }
-
+.events .column-padding {
+    background-color: #000;
+}
 .events-title {
     font-family: comfortaaMedium;
     font-size: 72px
@@ -326,11 +328,11 @@ input[type=checkbox]:checked + label {
 .menu .card{
     margin-bottom: 1em;
 }
-.food-item {
+.menu-item {
     text-align:left;
     margin-left: 1em
 }
-.food-price {
+.menu-price {
     text-align: right;
     margin-right: 1em
 }
