@@ -209,9 +209,14 @@ figure {
 /*--- Events ---*/
 .events {
     background-color: black;
-    color: white;
 }
-
+.events h1 {
+    font-family: comfortaaMedium;
+    font-weight: 600;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+}
 .events-title {
     font-family: comfortaaMedium;
     font-size: 72px
@@ -327,7 +332,7 @@ input[type=checkbox]:checked + label {
     text-align: center;
 }
 
-/* menus */
+/*--- Menus --*/
 .menu .card-body{
     text-align: center;
 }
@@ -385,5 +390,7 @@ input[type=checkbox]:checked + label {
     color:#92000f;
 }
 
-
-
+/*--- Order Now --*/
+.spacing {
+    padding-top: 5.7%;
+}
