@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: comfortaaLight;
-    src: url(fonts/Comfortaa/static/Comfortaa-Light.ttf);
+    src: url('fonts/Comfortaa/static/Comfortaa-Light.ttf')
 }
 .carousel-caption h1, h3 {
     font-family: comfortaaMedium;
@@ -336,6 +336,9 @@ input[type=checkbox]:checked + label {
 }
 
 /*--- Menus --*/
+#wagner{
+    width:80%;
+}
 .menu .card-body{
     text-align: center;
 }
@@ -358,6 +361,10 @@ input[type=checkbox]:checked + label {
     text-align: right;
     margin-bottom: .5em;
     font-size:.9em;
+}
+#prop-choice-price{
+    margin-top:1.5em;
+    font-size:1.2em;
 }
 .card ul{
     list-style: none;
@@ -396,6 +403,9 @@ input[type=checkbox]:checked + label {
 }
 .menu-control .nav-link:hover:not(.active){
     color:#92000f;
+}
+#wineglass{
+    width:30%;
 }
 
 /*--- Order Now --*/
