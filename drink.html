@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- Navigation -->
-	      <nav class="navbar navbar-expand-md navbar-dark sticky-top navbar-font">
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top navbar-font">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img class="logo" src="img/fg_logo.png" alt="flatiron logo">
@@ -53,142 +53,600 @@
         <nav class="menu-control">
             <ul class="nav nav-pills justify-content-center">
                 <li class="nav-item">
-                  <a class=" menuTab-font nav-link" href="food.html">Food Menu</a>
+                    <a class=" menuTab-font nav-link" href="food.html">Food Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="menuTab-font nav-link active" href="drink.html">Drink Menu</a>
+                    <a class="active menuTab-font nav-link" href="drink.html">Drink Menu</a>
                 </li>
             </ul>
         </nav>
-        <div class="container-fluid menu">
-            <div class="row">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title"><img src="img/wagner_logo.png" alt="Wagner: Family of Wine"> </h4>
-                        <div class="row justify-content-end card-text drink-price-headers">
-                            <div class="col-3">GLASS</div>
-                            <div class="col-3">BOTTLE</div>
+
+
+
+
+        <div class="accordion accordian-flush" id="drinkAccordion">
+
+
+            <!--Wines-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Wines
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#drinkAccordion">
+                <div class="accordion-body">
+                    <div class="container-fluid menu">
+                        <div class="row">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title"><img id="wagner" src="img/wagner_logo.png" alt="Wagner: Family of Wine"> </h4>
+                                    <div class="row justify-content-end card-text drink-price-headers">
+                                        <div class="col-lg-3">GLASS</div>
+                                        <div class="col-lg-3">BOTTLE</div>
+                                    </div>
+                                    <ul class="card-text">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-6 menu-item">Sea Sun Chardonnay</div>
+                                                <div class="col menu-price">$13</div>
+                                                <div class="col menu-price">$41</div>
+                                            </div>
+                                            <div class="row">
+                                                <p>A subtle nose and scents of lightly grilled mango, soft butterscotch, juicy red
+                                                    apple and newly ripened pineapple and apricot.</p>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-6 menu-item">Bonanza Cabernet Sauvignon</div>
+                                                <div class="col menu-price">$13</div>
+                                                <div class="col menu-price">$41</div>
+                                            </div>
+                                            <div class="row">
+                                                <p>Medium ruby-red, this wine opens with scents of currants and dried roses, grape
+                                                    pomace and fresh tilted soil.</p>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-6 menu-item">Boen Russian River Valley Pinot Noir</div>
+                                                <div class="col menu-price">$52</div>
+                                            </div>
+                                            <div class="row">
+                                                <p>Aromas of wild blackberry, Santa Rosa plum and strawberry with hints of oregano,
+                                                    sage and white pepper.</p>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-6 menu-item">Caymus Napa Cabernet Sauvignon</div>
+                                                <div class="col menu-price">$145</div>
+                                            </div>
+                                            <div class="row">
+                                                <p>A dark, scarlet red color, with powerful aromas of sweet ripe cabernet grapes.
+                                                    Initial impressions are fantastically appealing, brooding to expansive textural
+                                                    sensations of finely grained cacao tannins.</p>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                    </ul>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-3"><img id="wineglass" src="img/wineglass.png"> </div>
+                                        <div class="col-lg-3 align-self-center">We proudly pour <br> <strong>9 oz per
+                                                glass.</strong><br>Standard Pour: <strong>6 oz</strong><br>Every glass is a
+                                            glass<br>and a half.</div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <ul class="card-text">
-                            <li>
+                        <div class="row gx-5">
+                            <div class="col-lg-6">
                                 <div class="row">
-                                    <div class="col-6 menu-item">Sea Sun Chardonnay</div>
-                                    <div class="col menu-price">$13</div>
-                                    <div class="col menu-price">$41</div>
-                                </div>
-                                <div class="row">
-                                    <p>A subtle nose and scents of lightly grilled mango, soft butterscotch, juicy red apple and newly ripened pineapple and apricot.</p>
-                                </div>
-                            </li>
-                            <hr>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6 menu-item">Bonanza Cabernet Sauvignon</div>
-                                    <div class="col menu-price">$13</div>
-                                    <div class="col menu-price">$41</div>
-                                </div>
-                                <div class="row">
-                                    <p>Medium ruby-red, this wine opens with scents of currants and dried roses, grape pomace and fresh tilted soil.</p>
-                                </div>
-                            </li>
-                            <hr>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6 menu-item">Boen Russian River Valley Pinot Noir</div>
-                                    <div class="col menu-price">$52</div>
-                                </div>
-                                <div class="row">
-                                    <p>Aromas of wild blackberry, Santa Rosa plum and strawberry with hints of oregano, sage and white pepper.</p>
-                                </div>
-                            </li>
-                            <hr>
-                            <li>
-                                <div class="row">
-                                    <div class="col-6 menu-item">Caymus Napa Cabernet Sauvignon</div>
-                                    <div class="col menu-price">$145</div>
-                                </div>
-                                <div class="row">
-                                    <p>A dark, scarlet red color, with powerful aromas of sweet ripe cabernet grapes. Initial impressions are fantastically appealing, brooding to expansive textural sensations of finely grained cacao tannins.</p>
-                                </div>
-                            </li>
-                            <hr>
-                        </ul>
-                        <div class="row justify-content-center">
-                            <div class="col-3"><img src="img/wineglass.png"> </div>
-                            <div class="col-3 align-self-center amountWine-font">We proudly pour <br> <strong>9 oz per glass.</strong><br>Standard Pour: <strong>6 oz</strong><br>Every glass is a glass<br>and a half.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row gx-5">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Dinner Salads</h4>
-                                <ul class="card-text">
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-6 menu-item">Dinner Salad</div>
-                                            <div class="col menu-price">$8</div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">CHARDONNAY</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Sonoma Cutrer</div>
+                                                        <div class="col menu-price">$17</div>
+                                                        <div class="col menu-price">$52</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Cakebread</div>
+                                                        <div class="col menu-price">$95</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Imagery</div>
+                                                        <div class="col menu-price">$13</div>
+                                                        <div class="col menu-price">$41</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
                                         </div>
-                                        <div class="row">
-                                            <p>Fresh mixed greens, tomatoes, Applewood smoked bacon, cucumbers, and
-                                                chopped egg.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">PINOT GRIGIO</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Santi</div>
+                                                        <div class="col menu-price">$37</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Pepperwood Grove</div>
+                                                        <div class="col menu-price">$13</div>
+                                                        <div class="col menu-price">$41</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
                                         </div>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-6 menu-item">Chopped Caesar Salad</div>
-                                            <div class="col menu-price">$8</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SAUVIGNON BLANC</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Kim Crawford</div>
+                                                        <div class="col menu-price">$16</div>
+                                                        <div class="col menu-price">$52</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
                                         </div>
-                                        <div class="row">
-                                            <p>Chopped romaine hearts, shaved Parmesan cheese, house made croutons, and
-                                                Caesar dressing.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">RIESLING</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Peter Mertes</div>
+                                                        <div class="col menu-price">$35</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Pacific Rim</div>
+                                                        <div class="col menu-price">$13</div>
+                                                        <div class="col menu-price">$41</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
                                         </div>
-                                    </li>
-                                    <hr>
-                                </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">CHAMPAGNE/SPARKLING</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Belafina</div>
+                                                        <div class="col menu-price">$11</div>
+                                                        <div class="col menu-price">$35</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Zonin Prosecco</div>
+                                                        <div class="col menu-price">$10</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Moscato</div>
+                                                        <div class="col menu-price">$11</div>
+                                                        <div class="col menu-price">$35</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">PROPRIETOR CHOICE</h4>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <ul class="card-text">
+                                                        <li class="menu-item">
+                                                            White Zinfandel
+                                                        </li>
+                                                        <hr>
+                                                        <li class="menu-item">
+                                                            Pinot Noir
+                                                        </li>
+                                                        <hr>
+                                                        <li class="menu-item">
+                                                            Chardonnay
+                                                        </li>
+                                                        <hr>
+                                                        <li class="menu-item">
+                                                            Malbec
+                                                        </li>
+                                                        <hr>
+                                                        <li class="menu-item">
+                                                            Moscato
+                                                        </li>
+                                                        <hr>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <ul class="card-text">
+                                                        <li class="menu-item">
+                                                            Pinot Grigio
+                                                        </li>
+                                                        <hr>
+                                                        <li class="menu-item">
+                                                            Cabernet
+                                                        </li>
+                                                        <hr>
+                                                        <li class="menu-item">
+                                                            Merlot
+                                                        </li>
+                                                        <hr>
+                                                        <li class="menu-item">
+                                                            Sauvingnon Blanc
+                                                        </li>
+                                                        <hr>
+                                                        <li id="prop-choice-price">
+                                                            GLASS $10.95 | BOTTLE $35
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">FORTIFIED WINES</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Taylor 10 yr. Towny Port</div>
+                                                        <div class="col menu-price">$11</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Cakebread</div>
+                                                        <div class="col menu-price">$95</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Imagery</div>
+                                                        <div class="col menu-price">$13</div>
+                                                        <div class="col menu-price">$41</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">PINOT NOIR</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Meiomi</div>
+                                                        <div class="col menu-price">$14</div>
+                                                        <div class="col menu-price">$46</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Pepperwood Grove</div>
+                                                        <div class="col menu-price">$13</div>
+                                                        <div class="col menu-price">$41</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">MERLOT</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Sterling </div>
+                                                        <div class="col menu-price">$39</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Murphy Goode</div>
+                                                        <div class="col menu-price">$14</div>
+                                                        <div class="col menu-price">$42</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">MALBEC</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Catena</div>
+                                                        <div class="col menu-price">$14</div>
+                                                        <div class="col menu-price">$43</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">La Flor by Paul Hobbs</div>
+                                                        <div class="col menu-price">$45</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">RED ZINFANDEL</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Boneshaker</div>
+                                                        <div class="col menu-price">$14</div>
+                                                        <div class="col menu-price">$45</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SHIRAZ</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">19 Crimes</div>
+                                                        <div class="col menu-price">$12</div>
+                                                        <div class="col menu-price">$36</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">CABERNET</h4>
+                                            <div class="row justify-content-end card-text drink-price-headers">
+                                                <div class="col-lg-3">GLASS</div>
+                                                <div class="col-lg-3">BOTTLE</div>
+                                            </div>
+                                            <ul class="card-text">
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Josh</div>
+                                                        <div class="col menu-price">$14</div>
+                                                        <div class="col menu-price">$43</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Hess</div>
+                                                        <div class="col menu-price">$14</div>
+                                                        <div class="col menu-price">$46</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Silver Palm</div>
+                                                        <div class="col menu-price">$14</div>
+                                                        <div class="col menu-price">$46</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Jordan</div>
+                                                        <div class="col menu-price">$98</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Cakebread</div>
+                                                        <div class="col menu-price">$115</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Stag's Leap, Artemis</div>
+                                                        <div class="col menu-price">$110</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Paul Hobbs Crossbarn</div>
+                                                        <div class="col menu-price">$96</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Coppolla Director's Cut</div>
+                                                        <div class="col menu-price">$56</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Silver Oak</div>
+                                                        <div class="col menu-price">$117</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6 menu-item">Fit Vine</div>
+                                                        <div class="col menu-price">$11</div>
+                                                        <div class="col menu-price">$38</div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Dinner Salads</h4>
-                                <ul class="card-text">
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-6 menu-item">Dinner Salad</div>
-                                            <div class="col menu-price">$8</div>
-                                        </div>
-                                        <div class="row">
-                                            <p>Fresh mixed greens, tomatoes, Applewood smoked bacon, cucumbers, and
-                                                chopped egg.</p>
-                                        </div>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col-6 menu-item">Chopped Caesar Salad</div>
-                                            <div class="col menu-price">$8</div>
-                                        </div>
-                                        <div class="row">
-                                            <p>Chopped romaine hearts, shaved Parmesan cheese, house made croutons, and
-                                                Caesar dressing.</p>
-                                        </div>
-                                    </li>
-                                    <hr>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
+
+
+            <!--Spirits-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Spirits
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#drinkAccordion">
+                <div class="accordion-body">
+
+
+                </div>
+              </div>
+            </div>
+
+
+            <!--Cocktails-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Cocktails
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#drinkAccordion">
+                <div class="accordion-body">
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        
     </main>
     <!-- Footer -->
     <footer>
@@ -212,8 +670,8 @@
                     <hr class="light">
                     <h5 style="text-align:center">Our Hours</h5>
                     <hr class="light">
-                    <p>Monday-Thursday: 4:30-9:00</p>
-                    <p>Friday and Saturday: 4:30-10:30</p>
+                    <p>Monday - Thursday: 4:30 - 9:00</p>
+                    <p>Friday and Saturday: 4:30 - 10:30</p>
                     <p>Sunday: Closed</p>
                 </div>
             </div>
