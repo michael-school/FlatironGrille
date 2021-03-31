@@ -64,34 +64,49 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Sesame Chicken Bites</div>
-                                            <div class="col food-price">$9</div>
+                                            <div class="col food-item" id="item1">Sesame Chicken Bites</div>
+                                            <div class="col food-price" id="price1">$9</div>
                                         </div>
                                         <div class="row">
                                             <p>All-natural chicken tenders breaded, fried, and tossed in a sweet and
                                                 spicy sauce.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(1)">Add to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Sonomo Fried Green Tomatoes</div>
-                                            <div class="col food-price">$9</div>
+                                            <div class="col food-item" id="item2">Sonomo Fried Green Tomatoes</div>
+                                            <div class="col food-price" id="price2">$9</div>
                                         </div>
                                         <div class="row">
                                             <p>House breaded, deep-fried, topped with goat cheese, tomato basil relish,
                                                 sautéed pancetta, and tomato sauce.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(2)">Add to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Charleston Crab Cakes</div>
-                                            <div class="col food-price">$15</div>
+                                            <div class="col food-item" id="item3">Charleston Crab Cakes</div>
+                                            <div class="col food-price" id="price3">$15</div>
                                         </div>
                                         <div class="row">
                                             <p>Crab cakes served with black bean & corn relish, and red pepper cream
                                                 sauce.</p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(3)">Add to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -470,8 +485,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- </div>
-                <div class="col-lg-4"> -->
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
@@ -885,14 +898,9 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Cart</h4>
-                                <ul class="card-text">
-                                    <li>
-                                        <div>
-                                            <p>Order Now</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <h4 class="card-title">Your Order</h4>
+                                <table class="table" id="order"></table>
+                                <button type="button" class="btn btn-primary" onclick="clearAll()">Clear</button>
                             </div>
                         </div>
                     </div>
@@ -933,6 +941,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
