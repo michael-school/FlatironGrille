@@ -516,3 +516,7 @@ input[type=checkbox]:checked + label {
 /* .spacing {
     padding-top: 5.7%;
 } */
+.orderButton-align {
+    text-align: right;
+    margin-right: 2.4em;
+}

@@ -64,8 +64,8 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item" id="item1">Sesame Chicken Bites</div>
-                                            <div class="col food-price" id="price1">$9</div>
+                                            <div class="col menu-item" id="item1">Sesame Chicken Bites</div>
+                                            <div class="col menu-price" id="price1">$9</div>
                                         </div>
                                         <div class="row">
                                             <p>All-natural chicken tenders breaded, fried, and tossed in a sweet and
@@ -73,15 +73,16 @@
                                         </div>
                                         <div class="row justify-content-end">
                                             <div class="col-md-6">
-                                                <button type="button" class="btn btn-primary" onclick="addItem(1)">Add to Order</button>
+                                                <button type="button" class="btn btn-primary" onclick="addItem(1)">Add
+                                                    to Order</button>
                                             </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item" id="item2">Sonomo Fried Green Tomatoes</div>
-                                            <div class="col food-price" id="price2">$9</div>
+                                            <div class="col menu-item" id="item2">Sonomo Fried Green Tomatoes</div>
+                                            <div class="col menu-price" id="price2">$9</div>
                                         </div>
                                         <div class="row">
                                             <p>House breaded, deep-fried, topped with goat cheese, tomato basil relish,
@@ -89,15 +90,16 @@
                                         </div>
                                         <div class="row justify-content-end">
                                             <div class="col-md-6">
-                                                <button type="button" class="btn btn-primary" onclick="addItem(2)">Add to Order</button>
+                                                <button type="button" class="btn btn-primary" onclick="addItem(2)">Add
+                                                    to Order</button>
                                             </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item" id="item3">Charleston Crab Cakes</div>
-                                            <div class="col food-price" id="price3">$15</div>
+                                            <div class="col menu-item" id="item3">Charleston Crab Cakes</div>
+                                            <div class="col menu-price" id="price3">$15</div>
                                         </div>
                                         <div class="row">
                                             <p>Crab cakes served with black bean & corn relish, and red pepper cream
@@ -105,72 +107,115 @@
                                         </div>
                                         <div class="row justify-content-end">
                                             <div class="col-md-6">
-                                                <button type="button" class="btn btn-primary" onclick="addItem(3)">Add to Order</button>
+                                                <button type="button" class="btn btn-primary" onclick="addItem(3)">Add
+                                                    to Order</button>
                                             </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Jumbo Shrimp</div>
-                                            <div class="col food-price">(10)-$22</div>
-                                            <div class="col food-price">(5)-$11</div>
+                                            <div class="col menu-item">Jumbo Shrimp</div>
+                                            <span class="d-none" id="item4">Jumbo Shrimp - 10</span>
+                                            <span class="d-none" id="item5">Jumbo Shrimp - 5</span>
+                                            <div class="col menu-price">(10)-<span id="price4">$22</span></div>
+                                            <div class="col menu-price">(5)-<span id="price5">$11</span></div>
                                         </div>
                                         <div class="row">
                                             <p>Wild caught jumbo Gulf shrimp served either chilled, grilled, or fried.
                                             </p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-5 orderButton-align">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-primary" onclick="addItem(4)">Add 
+                                                        to Order</button>
+                                                    <button type="button" class="btn btn-primary" onclick="addItem(5)">Add
+                                                    to Order</button>    
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Fresh Foccacia Bread</div>
-                                            <div class="col food-price">$5</div>
+                                            <div class="col menu-item" id="item6">Fresh Foccacia Bread</div>
+                                            <div class="col menu-price" id="price6">$5</div>
                                         </div>
                                         <div class="row">
                                             <p>Topped with grated cheese, extra virgin olive oil, and pesto.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(6)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Bang Bang Shrimp</div>
-                                            <div class="col food-price">$13</div>
+                                            <div class="col menu-item" id="item7">Bang Bang Shrimp</div>
+                                            <div class="col menu-price" id="price7">$13</div>
                                         </div>
                                         <div class="row">
                                             <p>Jumbo Gulf shrimp breaded and tossed in Chili sriracha sauce.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(7)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Wicked Ahi Tuna</div>
-                                            <div class="col food-price">$17</div>
+                                            <div class="col menu-item" id="item8">Wicked Ahi Tuna</div>
+                                            <div class="col menu-price" id="price8">$17</div>
                                         </div>
                                         <div class="row">
                                             <p>Sushi grade Yellowfin tuna served with wasabi and topped with wontons and
                                                 tiger glaze.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(8)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">The Big Cheese Flatbread</div>
-                                            <div class="col food-price">$10</div>
+                                            <div class="col menu-item" id="item9">The Big Cheese Flatbread</div>
+                                            <div class="col menu-price" id="price9">$10</div>
                                         </div>
                                         <div class="row">
                                             <p>Asiago, Romano, Parmesan, Buffalo mozzarella, and tomato sauce.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(9)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Mediterranean Flatbread</div>
-                                            <div class="col food-price">$13</div>
+                                            <div class="col menu-item" id="item10">Mediterranean Flatbread</div>
+                                            <div class="col menu-price" id="price10">$13</div>
                                         </div>
                                         <div class="row">
                                             <p>Grilled chicken, pancetta, Feta cheese, bell peppers, extra virgin olive
                                                 oil, and olive tamponade.</p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(10)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -185,68 +230,104 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Caprese</div>
-                                            <div class="col food-price">$9</div>
+                                            <div class="col menu-item" id="item11">Caprese</div>
+                                            <div class="col menu-price" id="price11">$9</div>
                                         </div>
                                         <div class="row">
                                             <p>Sliced Roma tomatoes, Buffalo mozzarella, fresh basil, pesto, and extra
                                                 virgin olive oil.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(11)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Bleu Cheese Wedge</div>
-                                            <div class="col food-price">$9</div>
+                                            <div class="col menu-item" id="item12">Bleu Cheese Wedge</div>
+                                            <div class="col menu-price" id="price12">$9</div>
                                         </div>
                                         <div class="row">
                                             <p>Iceberg wedge, Maytag bleu cheese crumbles, chopped tomatoes, Applewood
                                                 smoked bacon, topped with bleu cheese dressing.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(12)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Funky Chunky Chicken Salad</div>
-                                            <div class="col food-price">$10</div>
+                                            <div class="col menu-item" id="item13">Funky Chunky Chicken Salad</div>
+                                            <div class="col menu-price" id="price13">$10</div>
                                         </div>
                                         <div class="row">
                                             <p>Chunks of chicken breast, grapes, pecans, carrots, apples, and onions, in
                                                 a creamy sauce served on a bed of fresh greens surrounded with fresh
                                                 seasonal fruit.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(13)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Grilled Caesar</div>
-                                            <div class="col food-price">$12</div>
+                                            <div class="col menu-item" id="item14">Grilled Caesar</div>
+                                            <div class="col menu-price" id="price14">$12</div>
                                         </div>
                                         <div class="row">
                                             <p>Grilled Romaine hearts, shaved Parmesan cheese, and house made croutons.
                                             </p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(14)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Southern Salad</div>
-                                            <div class="col food-price">$9</div>
+                                            <div class="col menu-item" id="item15">Southern Salad</div>
+                                            <div class="col menu-price" id="price15">$9</div>
                                         </div>
                                         <div class="row">
                                             <p>Bed of fresh greens, Applewood smoked bacon, mixed cheese, egg, and fried
                                                 onion frizzles.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(15)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Spring Salad</div>
-                                            <div class="col food-price">$10</div>
+                                            <div class="col menu-item" id="item16">Spring Salad</div>
+                                            <div class="col menu-price" id="price16">$10</div>
                                         </div>
                                         <div class="row">
                                             <p>Baby spinach, spring mix greens, fresh fruit, almonds, and feta cheese.
                                             </p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(16)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -290,35 +371,59 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Bayou Shrimp</div>
-                                            <div class="col food-price">(10)-$28</div>
-                                            <div class="col food-price">(5)-$20</div>
+                                            <div class="col menu-item">Bayou Shrimp</div>
+                                            <span class="d-none" id="item17">Bayou Shrimp - 10</span>
+                                            <span class="d-none" id="item18">Bayou Shrimp - 5</span>
+                                            <div class="col menu-price">(10)-<span id="price17">$28</span></div>
+                                            <div class="col menu-price">(5)-<span id="price18">$20</span></div>
                                         </div>
                                         <div class="row">
                                             <p>Jumbo Gulf shrimp chilled, grilled, fried, or blackened served with
                                                 French fries and house made coleslaw.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-5 orderButton-align">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-primary" onclick="addItem(17)">Add 
+                                                        to Order</button>
+                                                    <button type="button" class="btn btn-primary" onclick="addItem(18)">Add
+                                                    to Order</button>    
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Southern Tender</div>
-                                            <div class="col food-price">$17</div>
+                                            <div class="col menu-item" id="item19">Southern Tender</div>
+                                            <div class="col menu-price" id="price19">$17</div>
                                         </div>
                                         <div class="row">
                                             <p>All-natural chicken tenders grilled, fried, or blackened served with
                                                 French fries and house made coleslaw.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(19)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Delta Catfish</div>
-                                            <div class="col food-price">$19</div>
+                                            <div class="col menu-item" id="item20">Delta Catfish</div>
+                                            <div class="col menu-price" id="price20">$19</div>
                                         </div>
                                         <div class="row">
                                             <p>Mississippi Delta Catfish grilled, fried, or blackened and served with
                                                 French fries and house made coleslaw.</p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(20)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -334,33 +439,51 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Tenders & French Fries</div>
-                                            <div class="col food-price">$7</div>
+                                            <div class="col menu-item" id="item21">Tenders & French Fries</div>
+                                            <div class="col menu-price" id="price21">$7</div>
                                         </div>
                                         <div class="row">
                                             <p>All-natural chicken tenders grilled or fried and served with French
                                                 fries.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(21)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Grilled Cheese & French Fries</div>
-                                            <div class="col food-price">$7</div>
+                                            <div class="col menu-item" id="item22">Grilled Cheese & French Fries</div>
+                                            <div class="col menu-price" id="price22">$7</div>
                                         </div>
                                         <div class="row">
                                             <p>Grilled cheese sandwich on sourdough bread served with French fries.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(22)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Noodles & Cheese</div>
-                                            <div class="col food-price">$7</div>
+                                            <div class="col menu-item" id="item23">Noodles & Cheese</div>
+                                            <div class="col menu-price" id="price23">$7</div>
                                         </div>
                                         <div class="row">
                                             <p>Noodles served with applewood smoked bacon in a mixed cheese blend sauce.
                                             </p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(23)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -375,104 +498,160 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Classic Burger</div>
-                                            <div class="col food-price">$12</div>
+                                            <div class="col menu-item" id="item24">Classic Burger</div>
+                                            <div class="col menu-price" id="price24">$12</div>
                                         </div>
                                         <div class="row">
                                             <p>Half-pound burger topped with or without Wisconsin cheddar cheese,
                                                 lettuce, sliced tomato, and raw onion on a brioche bun.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(24)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Monterey Burger</div>
-                                            <div class="col food-price">$14</div>
+                                            <div class="col menu-item" id="item25">Monterey Burger</div>
+                                            <div class="col menu-price" id="price25">$14</div>
                                         </div>
                                         <div class="row">
                                             <p>Half-pound burger topped with baby Swiss cheese, sautéed mushrooms, and
                                                 beef demi-glaze on artisan bread.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(25)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Bacon Cheeseburger</div>
-                                            <div class="col food-price">$14</div>
+                                            <div class="col menu-item" id="item26">Bacon Cheeseburger</div>
+                                            <div class="col menu-price" id="price26">$14</div>
                                         </div>
                                         <div class="row">
                                             <p>Half-pound burger topped with Applewood smoked bacon, Wisconsin cheddar
                                                 cheese, lettuce, sliced tomato, and raw onion on a brioche bun.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(26)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Bleu Cheeseburger</div>
-                                            <div class="col food-price">$15</div>
+                                            <div class="col menu-item" id="item27">Bleu Cheeseburger</div>
+                                            <div class="col menu-price" id="price27">$15</div>
                                         </div>
                                         <div class="row">
                                             <p>Half-pound burger with Maytag bleu cheese crumbles and fried onions on a
                                                 brioche bun.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(27)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">FG French Dip</div>
-                                            <div class="col food-price">$18</div>
+                                            <div class="col menu-item" id="item28">FG French Dip</div>
+                                            <div class="col menu-price" id="price28">$18</div>
                                         </div>
                                         <div class="row">
                                             <p>8 oz sliced, roasted prime beef dipped in au jus served in artisan roll
                                                 with a side of creamy horseradish sauce.</p>
                                         </div>
                                         <div class="extra-menu-info card-text">
-                                            <h6>*Add Cheese & Grilled Onions $3</h6>
+                                            <p><br>
+                                                <h6>*Add Cheese & Grilled Onions $3</h6>
+                                            </p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(28)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Grouper Sandwich</div>
-                                            <div class="col food-price">$17</div>
+                                            <div class="col menu-item" id="item29">Grouper Sandwich</div>
+                                            <div class="col menu-price" id="price29">$17</div>
                                         </div>
                                         <div class="row">
                                             <p>Fried, grilled, or blackened grouper, lettuce, and sliced tomato on a
                                                 brioche bun.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(29)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Salmon Cake BLT</div>
-                                            <div class="col food-price">$14</div>
+                                            <div class="col menu-item" id="item30">Salmon Cake BLT</div>
+                                            <div class="col menu-price" id="price30">$14</div>
                                         </div>
                                         <div class="row">
                                             <p>Sautéed salmon patty, 3 strips of Applewood smoked bacon, herb aioli,
                                                 field greens, and sliced tomato on artisan bread.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(30)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Madison Park Chicken</div>
-                                            <div class="col food-price">$14</div>
+                                            <div class="col menu-item" id="item31">Madison Park Chicken</div>
+                                            <div class="col menu-price" id="price31">$14</div>
                                         </div>
                                         <div class="row">
                                             <p>Grilled chicken breast, Canadian bacon, Swiss cheese, lettuce, tomato,
                                                 and aioli on a brioche bun.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(31)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Funky Chunky Chicken Salad</div>
-                                            <div class="col food-price">$11</div>
+                                            <div class="col menu-item" id="item32">Funky Chunky Chicken Salad</div>
+                                            <div class="col menu-price" id="price32">$11</div>
                                         </div>
                                         <div class="row">
                                             <p>Chunks of chicken breast, seedless grapes, pecans, carrots, apples, and
                                                 diced onions in a creamy mayonnaise-based sauce served on a fresh
                                                 criossant.</p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(32)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -492,62 +671,86 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Center Cut Filet Mignon 8 oz.</div>
-                                            <div class="col food-price">$57</div>
+                                            <div class="col menu-item" id="item33">Center Cut Filet Mignon 8 oz.</div>
+                                            <div class="col menu-price" id="price33">$57</div>
                                         </div>
-                                        <div class="row">
-                                            <p></p>
-                                        </div>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col food-item">Prime Sirloin 8 oz.</div>
-                                            <div class="col food-price">$29</div>
-                                        </div>
-                                        <div class="row">
-                                            <p></p>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(33)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">KC Strip Steak (Bone-in) 16 oz.</div>
-                                            <div class="col food-price">$49</div>
+                                            <div class="col menu-item" id="item34">Prime Sirloin 8 oz.</div>
+                                            <div class="col menu-price" id="price34">$29</div>
                                         </div>
-                                        <div class="row">
-                                            <p></p>
-                                        </div>
-                                    </li>
-                                    <hr>
-                                    <li>
-                                        <div class="row">
-                                            <div class="col food-item">Hand Cut Prime Ribeye 14 oz.</div>
-                                            <div class="col food-price">$52</div>
-                                        </div>
-                                        <div class="row">
-                                            <p></p>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(34)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">New Zeland Lamb Chops</div>
-                                            <div class="col food-price">(3-bone)-$37</div>
-                                            <div class="col food-price">(5-bone)-$49</div>
+                                            <div class="col menu-item" id="item35">KC Strip Steak (Bone-in) 16 oz.</div>
+                                            <div class="col menu-price" id="price35">$49</div>
                                         </div>
-                                        <div class="row">
-                                            <p></p>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(35)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Filet Mignon Steak Tips</div>
-                                            <div class="col food-price">$31</div>
+                                            <div class="col menu-item" id="item36">Hand Cut Prime Ribeye 14 oz.</div>
+                                            <div class="col menu-price" id="price36">$52</div>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(36)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
                                         <div class="row">
-                                            <p></p>
+                                            <div class="col menu-item">New Zealand Lamb Chops</div>
+                                            <span class="d-none" id="item37">New Zealand Lamb Chops - (5-bone)</span>
+                                            <span class="d-none" id="item38">New Zealand Lamb Chops - (3-bone)</span>
+                                            <div class="col menu-price">(5-bone)-<span id="price37">$49</span></div>
+                                            <div class="col menu-price">(3-bone)-<span id="price38">$37</span></div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-5 orderButton-align">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-primary" onclick="addItem(37)">Add 
+                                                        to Order</button>
+                                                    <button type="button" class="btn btn-primary" onclick="addItem(38)">Add
+                                                    to Order</button>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col menu-item" id="item39">Filet Mignon Steak Tips</div>
+                                            <div class="col menu-price" id="price39">$31</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(39)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -591,34 +794,52 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Atlantic Salmon</div>
-                                            <div class="col food-price">$28</div>
+                                            <div class="col menu-item" id="item40">Atlantic Salmon</div>
+                                            <div class="col menu-price" id="price40">$28</div>
                                         </div>
                                         <div class="row">
                                             <p>Grilled and topped with tiger glaze and served with chef's vegetables and
                                                 choice of side.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(40)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Chilean Sea Bass</div>
-                                            <div class="col food-price">$46</div>
+                                            <div class="col menu-item" id="item41">Chilean Sea Bass</div>
+                                            <div class="col menu-price" id="price41">$46</div>
                                         </div>
                                         <div class="row">
                                             <p>Sautéed in white wine and butter served with tomato basil risotto and
                                                 chef's vegetables.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(41)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Blackened Grouper</div>
-                                            <div class="col food-price">$36</div>
+                                            <div class="col menu-item" id="item42">Blackened Grouper</div>
+                                            <div class="col menu-price" id="price42">$36</div>
                                         </div>
                                         <div class="row">
                                             <p>Served with Roasted Pineapple Mango relish, chef's vegetables, and choice
                                                 of side.</p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(42)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -639,45 +860,69 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Blackened Chicken Alfredo</div>
-                                            <div class="col food-price">$19</div>
+                                            <div class="col menu-item" id="item43">Blackened Chicken Alfredo</div>
+                                            <div class="col menu-price" id="price43">$19</div>
                                         </div>
                                         <div class="row">
                                             <p>Blackened chicken breasts served on top of fettucine and tossed in a
                                                 Parmesan cream sauce finished with shaved Parmesan cheese.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(43)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Shrimp Diavolo</div>
-                                            <div class="col food-price">$24</div>
+                                            <div class="col menu-item" id="item44">Shrimp Diavolo</div>
+                                            <div class="col menu-price" id="price44">$24</div>
                                         </div>
                                         <div class="row">
                                             <p>Sautéed jumbo Gulf shrimp, spinach, and tomatoes in a spicy sauce with
                                                 fresh herbs and garlic served over spicy risotto.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(44)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Frankie's Pasta</div>
-                                            <div class="col food-price">$20</div>
+                                            <div class="col menu-item" id="item45">Frankie's Pasta</div>
+                                            <div class="col menu-price" id="price45">$20</div>
                                         </div>
                                         <div class="row">
                                             <p>Italian sausage and ziti tossed in a fresh tomato cream sauce and
                                                 finished with pecorino Romano cheese and roasted red peppers.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(45)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Peasant Pasta</div>
-                                            <div class="col food-price">$21</div>
+                                            <div class="col menu-item" id="item46">Peasant Pasta</div>
+                                            <div class="col menu-price" id="price46">$21</div>
                                         </div>
                                         <div class="row">
                                             <p>Porcini mushrooms sun-dried tomatoes, sautéed chicken, and Italian
                                                 sausage tossed with ziti in a Mustard Buttercream sauce.</p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(46)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -698,12 +943,15 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Filet Mignon Steak Tips, Jumbo Gulf shrimp, and
-                                                Charleston Crabcake</div>
-                                            <div class="col food-price">$46</div>
+                                            <div class="col menu-item" id="item47">Filet Mignon Steak Tips, Jumbo Gulf
+                                                shrimp, and Charleston Crabcake</div>
+                                            <div class="col menu-price" id="price47">$46</div>
                                         </div>
-                                        <div class="row">
-                                            <p></p>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(47)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -724,36 +972,54 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Chicken Florentine</div>
-                                            <div class="col food-price">$25</div>
+                                            <div class="col menu-item" id="item48">Chicken Florentine</div>
+                                            <div class="col menu-price" id="price48">$25</div>
                                         </div>
                                         <div class="row">
                                             <p>Sautéed chicken, roasted artichoke, pancetta, baby spinach, and garden
                                                 tomatoes layered between 2 chicken breasts and topped with Fontina
                                                 cheese over creamy Parmesan fettucine.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(48)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Santo's Chicken</div>
-                                            <div class="col food-price">$27</div>
+                                            <div class="col menu-item" id="item49">Santo's Chicken</div>
+                                            <div class="col menu-price" id="price49">$27</div>
                                         </div>
                                         <div class="row">
                                             <p>Sautéed chicken breasts covered with tomato, basil, and pancetta cream
                                                 sauce on top of Parmesan risotto, served with chef's vegetables.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(49)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Napa Chicken</div>
-                                            <div class="col food-price">$24</div>
+                                            <div class="col menu-item" id="item50">Napa Chicken</div>
+                                            <div class="col menu-price" id="price50">$24</div>
                                         </div>
                                         <div class="row">
                                             <p>Sautéed chicken breasts, roasted artichoke, wild mushrooms, sun-dried
                                                 tomatoes, baby spinach, fresh herbs, and extra virgin olive oil served
                                                 over fettucine.</p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(50)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -774,23 +1040,35 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Dinner Salad</div>
-                                            <div class="col food-price">$8</div>
+                                            <div class="col menu-item" id="item51">Dinner Salad</div>
+                                            <div class="col menu-price" id="price51">$8</div>
                                         </div>
                                         <div class="row">
                                             <p>Fresh mixed greens, tomatoes, Applewood smoked bacon, cucumbers, and
                                                 chopped egg.</p>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(51)">Add
+                                                    to Order</button>
+                                            </div>
+                                        </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Chopped Caesar Salad</div>
-                                            <div class="col food-price">$8</div>
+                                            <div class="col menu-item" id="item52">Chopped Caesar Salad</div>
+                                            <div class="col menu-price" id="price52">$8</div>
                                         </div>
                                         <div class="row">
                                             <p>Chopped romaine hearts, shaved Parmesan cheese, house made croutons, and
                                                 Caesar dressing.</p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(52)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -805,43 +1083,79 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Creamed Spinach</div>
-                                            <div class="col food-price">$8</div>
+                                            <div class="col menu-item" id="item53">Creamed Spinach</div>
+                                            <div class="col menu-price" id="price53">$8</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(53)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Baked Potato</div>
-                                            <div class="col food-price">$7</div>
+                                            <div class="col menu-item" id="item54">Baked Potato</div>
+                                            <div class="col menu-price" id="price54">$7</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(54)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Parmesan Risotto</div>
-                                            <div class="col food-price">$8</div>
+                                            <div class="col menu-item" id="item55">Parmesan Risotto</div>
+                                            <div class="col menu-price" id="price55">$8</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(55)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">FG Mac & Cheese</div>
-                                            <div class="col food-price">$8</div>
+                                            <div class="col menu-item" id="item56">FG Mac & Cheese</div>
+                                            <div class="col menu-price" id="price56">$8</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(56)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Chef's Vegetable</div>
-                                            <div class="col food-price">$7</div>
+                                            <div class="col menu-item" id="item57">Chef's Vegetable</div>
+                                            <div class="col menu-price" id="price57">$7</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(57)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">French Fries</div>
-                                            <div class="col food-price">$5</div>
+                                            <div class="col menu-item" id="item58">French Fries</div>
+                                            <div class="col menu-price" id="price58">$5</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(58)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
@@ -856,37 +1170,69 @@
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Cannoli</div>
-                                            <div class="col food-price">$8</div>
+                                            <div class="col menu-item" id="item59">Cannoli</div>
+                                            <div class="col menu-price" id="price59">$8</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(59)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Chocolate Eruption</div>
-                                            <div class="col food-price">$9</div>
+                                            <div class="col menu-item" id="item60">Chocolate Eruption</div>
+                                            <div class="col menu-price" id="price60">$9</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(60)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Gelato</div>
-                                            <div class="col food-price">$7</div>
+                                            <div class="col menu-item" id="item61">Gelato</div>
+                                            <div class="col menu-price" id="price61">$7</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(61)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">Lemon Cream Cake</div>
-                                            <div class="col food-price">$8</div>
+                                            <div class="col menu-item" id="item62">Lemon Cream Cake</div>
+                                            <div class="col menu-price" id="price 62">$8</div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(62)">Add
+                                                    to Order</button>
+                                            </div>
                                         </div>
                                     </li>
                                     <hr>
                                     <li>
                                         <div class="row">
-                                            <div class="col food-item">New York Cheesecake</div>
-                                            <div class="col food-price">$9</div>
+                                            <div class="col menu-item" id="item63">New York Cheesecake</div>
+                                            <div class="col menu-price" id="price63">$9</div>
                                         </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(63)">Add
+                                                    to
+                                                    Order</button>
+                                            </div>
+                                        </div>
+
                                     </li>
                                     <hr>
                                 </ul>
