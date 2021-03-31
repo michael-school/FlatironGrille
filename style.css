@@ -108,11 +108,11 @@ footer .logo {
     background-color:#b00012;
     border: 1px solid #b00012;
 }
-  .btn-primary:hover {
+.btn-primary:hover {
     background-color: #92000f;
     border: 1px solid #92000f;
 }
-  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     background-color: #990010;
     border: 1px solid #990010;
 }
