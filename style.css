@@ -92,7 +92,7 @@ footer .logo {
     top: 50%;
     transform: translateY(-50%);
     bottom:initial;
-    text-shadow: -2px -2px 2px rgba(255,255,255,.1), 2px 2px 2px rgba(0,0,0,.5);
+    text-shadow: 2px 2px black, 2px 2px black;
 }
 .carousel-caption h1 {
     font-size: 1.8em;
@@ -112,7 +112,7 @@ footer .logo {
     background-color: #92000f;
     border: 1px solid #92000f;
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary:focus {
     background-color: #990010;
     border: 1px solid #990010;
 }
@@ -341,12 +341,11 @@ input[type=checkbox]:checked + label {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
+}
   #myImg:hover {opacity: 0.7;}
   
   /* The Modal (background) */
-  .modal {
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -358,18 +357,14 @@ input[type=checkbox]:checked + label {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
+}
+.modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-  }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
+}
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -378,21 +373,17 @@ input[type=checkbox]:checked + label {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
-  }
-  
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption {
+}
+.modal-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
-  }
+}
   
-  @keyframes zoom {
+@keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
+}
+.close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -400,21 +391,20 @@ input[type=checkbox]:checked + label {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover, .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
+}
   
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
     .modal-content {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 /*--- Menus --*/
 #wagner{
     width:80%;
@@ -512,11 +502,24 @@ input[type=checkbox]:checked + label {
     padding-right:0;
 }
 
-/*--- Order Now --*/
-/* .spacing {
-    padding-top: 5.7%;
-} */
-.orderButton-align {
+/* order page */
+
+#order-menu{
+    margin-top: 2em;
+}
+#order-menu .col-12, .two-button{
     text-align: right;
-    margin-right: 2.4em;
+}
+#cart-button{
+    position:fixed;
+    border-radius: 50%;
+    font-size: 2em;
+    z-index: 1;
+    left: 5%;
+}
+.btn-outline-primary{
+    color:#b00012;
+    border:none;
+    background-color: transparent;
+    border-radius: 50%;
 }

@@ -10,9 +10,11 @@
     <meta name="author" content="BMDBTMBMM, Christian Wilcox, Michael Crockett, Shrey Patel">
     <meta name="description" content="This page allows the user to order anything off the food menu for pickup.">
     <title>Flatiron Grille | Order Online</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -21,7 +23,7 @@
         <nav class="navbar navbar-expand-md navbar-dark sticky-top navbar-font">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo" src="img/fg_logo.png" alt="flatiron logo">
+                    <img class="logo" src="img/favicon.png" alt="flatiron logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span class="navbar-toggler-icon"></span>
@@ -53,9 +55,15 @@
         </nav>
     </header>
     <main>
-        <div class="container-fluid menu spacing">
-            <div class="row gx-5">
-                <div class="col-lg-6">
+        <!--Cart Button-->
+        <button id="cart-button" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+            aria-controls="offcanvasCart">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+        <!--Menu-->
+        <div class="container-fluid menu" id="order-menu">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-9">
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
@@ -71,7 +79,7 @@
                                                 spicy sauce.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(1)">Add
                                                     to Order</button>
                                             </div>
@@ -88,7 +96,7 @@
                                                 sautéed pancetta, and tomato sauce.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(2)">Add
                                                     to Order</button>
                                             </div>
@@ -105,7 +113,7 @@
                                                 sauce.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(3)">Add
                                                     to Order</button>
                                             </div>
@@ -125,12 +133,21 @@
                                             </p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-5 orderButton-align">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-primary" onclick="addItem(4)">Add 
-                                                        to Order</button>
-                                                    <button type="button" class="btn btn-primary" onclick="addItem(5)">Add
-                                                    to Order</button>    
+                                            <div class="col-md-6">
+                                                <div class="two-button text-nowrap">
+                                                    <button type="button" class="btn btn-primary"
+                                                        onclick="addItem(4)">Add
+                                                        to Order (10)</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <div class="two-button text-nowrap">
+                                                    <button type="button" class="btn btn-primary"
+                                                        onclick="addItem(5)">Add
+                                                        to Order (5)&nbsp; </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +162,7 @@
                                             <p>Topped with grated cheese, extra virgin olive oil, and pesto.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(6)">Add
                                                     to Order</button>
                                             </div>
@@ -161,7 +178,7 @@
                                             <p>Jumbo Gulf shrimp breaded and tossed in Chili sriracha sauce.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(7)">Add
                                                     to Order</button>
                                             </div>
@@ -178,7 +195,7 @@
                                                 tiger glaze.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(8)">Add
                                                     to Order</button>
                                             </div>
@@ -194,7 +211,7 @@
                                             <p>Asiago, Romano, Parmesan, Buffalo mozzarella, and tomato sauce.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(9)">Add
                                                     to Order</button>
                                             </div>
@@ -211,7 +228,7 @@
                                                 oil, and olive tamponade.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(10)">Add
                                                     to Order</button>
                                             </div>
@@ -237,7 +254,7 @@
                                                 virgin olive oil.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(11)">Add
                                                     to Order</button>
                                             </div>
@@ -254,7 +271,7 @@
                                                 smoked bacon, topped with bleu cheese dressing.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(12)">Add
                                                     to Order</button>
                                             </div>
@@ -272,7 +289,7 @@
                                                 seasonal fruit.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(13)">Add
                                                     to Order</button>
                                             </div>
@@ -289,7 +306,7 @@
                                             </p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(14)">Add
                                                     to Order</button>
                                             </div>
@@ -306,7 +323,7 @@
                                                 onion frizzles.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(15)">Add
                                                     to Order</button>
                                             </div>
@@ -323,7 +340,7 @@
                                             </p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(16)">Add
                                                     to Order</button>
                                             </div>
@@ -381,12 +398,20 @@
                                                 French fries and house made coleslaw.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-5 orderButton-align">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-primary" onclick="addItem(17)">Add 
-                                                        to Order</button>
-                                                    <button type="button" class="btn btn-primary" onclick="addItem(18)">Add
-                                                    to Order</button>    
+                                            <div class="col-md-6">
+                                                <div class="two-button text-nowrap">
+                                                    <button type="button" class="btn btn-primary"
+                                                        onclick="addItem(17)">Add
+                                                        to Order (10)</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <div class="two-button text-nowrap">
+                                                    <button type="button" class="btn btn-primary"
+                                                        onclick="addItem(18)">Add
+                                                        to Order (5)&nbsp; </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -402,7 +427,7 @@
                                                 French fries and house made coleslaw.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(19)">Add
                                                     to Order</button>
                                             </div>
@@ -419,7 +444,7 @@
                                                 French fries and house made coleslaw.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(20)">Add
                                                     to Order</button>
                                             </div>
@@ -446,7 +471,7 @@
                                                 fries.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(21)">Add
                                                     to Order</button>
                                             </div>
@@ -462,7 +487,7 @@
                                             <p>Grilled cheese sandwich on sourdough bread served with French fries.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(22)">Add
                                                     to Order</button>
                                             </div>
@@ -479,7 +504,7 @@
                                             </p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(23)">Add
                                                     to Order</button>
                                             </div>
@@ -505,7 +530,7 @@
                                                 lettuce, sliced tomato, and raw onion on a brioche bun.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(24)">Add
                                                     to Order</button>
                                             </div>
@@ -522,7 +547,7 @@
                                                 beef demi-glaze on artisan bread.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(25)">Add
                                                     to Order</button>
                                             </div>
@@ -539,7 +564,7 @@
                                                 cheese, lettuce, sliced tomato, and raw onion on a brioche bun.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(26)">Add
                                                     to Order</button>
                                             </div>
@@ -556,7 +581,7 @@
                                                 brioche bun.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(27)">Add
                                                     to Order</button>
                                             </div>
@@ -578,7 +603,7 @@
                                             </p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(28)">Add
                                                     to Order</button>
                                             </div>
@@ -595,7 +620,7 @@
                                                 brioche bun.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(29)">Add
                                                     to Order</button>
                                             </div>
@@ -612,7 +637,7 @@
                                                 field greens, and sliced tomato on artisan bread.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(30)">Add
                                                     to Order</button>
                                             </div>
@@ -629,7 +654,7 @@
                                                 and aioli on a brioche bun.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(31)">Add
                                                     to Order</button>
                                             </div>
@@ -647,7 +672,7 @@
                                                 criossant.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(32)">Add
                                                     to Order</button>
                                             </div>
@@ -674,7 +699,7 @@
                                             <div class="col menu-price" id="price33">$57</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(33)">Add
                                                     to Order</button>
                                             </div>
@@ -687,7 +712,7 @@
                                             <div class="col menu-price" id="price34">$29</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(34)">Add
                                                     to Order</button>
                                             </div>
@@ -700,7 +725,7 @@
                                             <div class="col menu-price" id="price35">$49</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(35)">Add
                                                     to Order</button>
                                             </div>
@@ -713,7 +738,7 @@
                                             <div class="col menu-price" id="price36">$52</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(36)">Add
                                                     to Order</button>
                                             </div>
@@ -729,12 +754,20 @@
                                             <div class="col menu-price">(3-bone)-<span id="price38">$37</span></div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-5 orderButton-align">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-primary" onclick="addItem(37)">Add 
-                                                        to Order</button>
-                                                    <button type="button" class="btn btn-primary" onclick="addItem(38)">Add
-                                                    to Order</button>    
+                                            <div class="col-md-6">
+                                                <div class="two-button text-nowrap">
+                                                    <button type="button" class="btn btn-primary"
+                                                        onclick="addItem(37)">Add
+                                                        to Order (5)&nbsp; </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-md-6">
+                                                <div class="two-button text-nowrap">
+                                                    <button type="button" class="btn btn-primary"
+                                                        onclick="addItem(38)">Add
+                                                        to Order (3)&nbsp; </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -746,7 +779,7 @@
                                             <div class="col menu-price" id="price39">$31</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(39)">Add
                                                     to Order</button>
                                             </div>
@@ -801,7 +834,7 @@
                                                 choice of side.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(40)">Add
                                                     to Order</button>
                                             </div>
@@ -818,7 +851,7 @@
                                                 chef's vegetables.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(41)">Add
                                                     to Order</button>
                                             </div>
@@ -835,7 +868,7 @@
                                                 of side.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(42)">Add
                                                     to Order</button>
                                             </div>
@@ -867,7 +900,7 @@
                                                 Parmesan cream sauce finished with shaved Parmesan cheese.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(43)">Add
                                                     to Order</button>
                                             </div>
@@ -884,7 +917,7 @@
                                                 fresh herbs and garlic served over spicy risotto.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(44)">Add
                                                     to Order</button>
                                             </div>
@@ -901,7 +934,7 @@
                                                 finished with pecorino Romano cheese and roasted red peppers.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(45)">Add
                                                     to Order</button>
                                             </div>
@@ -918,7 +951,7 @@
                                                 sausage tossed with ziti in a Mustard Buttercream sauce.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(46)">Add
                                                     to Order</button>
                                             </div>
@@ -947,7 +980,7 @@
                                             <div class="col menu-price" id="price47">$46</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(47)">Add
                                                     to Order</button>
                                             </div>
@@ -980,7 +1013,7 @@
                                                 cheese over creamy Parmesan fettucine.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(48)">Add
                                                     to Order</button>
                                             </div>
@@ -997,7 +1030,7 @@
                                                 sauce on top of Parmesan risotto, served with chef's vegetables.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(49)">Add
                                                     to Order</button>
                                             </div>
@@ -1015,7 +1048,7 @@
                                                 over fettucine.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(50)">Add
                                                     to Order</button>
                                             </div>
@@ -1047,7 +1080,7 @@
                                                 chopped egg.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(51)">Add
                                                     to Order</button>
                                             </div>
@@ -1064,7 +1097,7 @@
                                                 Caesar dressing.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(52)">Add
                                                     to Order</button>
                                             </div>
@@ -1086,7 +1119,7 @@
                                             <div class="col menu-price" id="price53">$8</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(53)">Add
                                                     to Order</button>
                                             </div>
@@ -1099,7 +1132,7 @@
                                             <div class="col menu-price" id="price54">$7</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(54)">Add
                                                     to Order</button>
                                             </div>
@@ -1112,7 +1145,7 @@
                                             <div class="col menu-price" id="price55">$8</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(55)">Add
                                                     to Order</button>
                                             </div>
@@ -1125,7 +1158,7 @@
                                             <div class="col menu-price" id="price56">$8</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(56)">Add
                                                     to Order</button>
                                             </div>
@@ -1138,7 +1171,7 @@
                                             <div class="col menu-price" id="price57">$7</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(57)">Add
                                                     to Order</button>
                                             </div>
@@ -1151,7 +1184,7 @@
                                             <div class="col menu-price" id="price58">$5</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(58)">Add
                                                     to Order</button>
                                             </div>
@@ -1173,7 +1206,7 @@
                                             <div class="col menu-price" id="price59">$8</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(59)">Add
                                                     to Order</button>
                                             </div>
@@ -1186,7 +1219,7 @@
                                             <div class="col menu-price" id="price60">$9</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(60)">Add
                                                     to Order</button>
                                             </div>
@@ -1199,7 +1232,7 @@
                                             <div class="col menu-price" id="price61">$7</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(61)">Add
                                                     to Order</button>
                                             </div>
@@ -1212,7 +1245,7 @@
                                             <div class="col menu-price" id="price 62">$8</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(62)">Add
                                                     to Order</button>
                                             </div>
@@ -1225,7 +1258,7 @@
                                             <div class="col menu-price" id="price63">$9</div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
+                                            <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(63)">Add
                                                     to
                                                     Order</button>
@@ -1239,28 +1272,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                                open cart
-                            </button>
-                        </div>
-                    </div>
 
-                    <!--OffCanvas-->
-                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasCartLabel">Your Order</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                                <table class="table" id="order"></table>
-                                <button type="button" class="btn btn-primary" onclick="clearAll()">Clear</button>
-                        </div>
-                    </div>
-                </div>
+
+            </div>
+        </div>
+        
+
+        <!--OffCanvas-->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasCartLabel">Your Order</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <table class="table" id="order"></table>
+                <button type="button" class="btn btn-primary" onclick="clearAll()">Clear</button>
             </div>
         </div>
     </main>
@@ -1269,7 +1297,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 social footer-font" style="text-align:center">
-                    <img class="center logo" src="img/fg_logo.png" width="75px">
+                    <img class="center logo" src="img/favicon.png" width="75px">
                     <p>Social Media</p>
                     <a href="https://www.facebook.com/flatirongrille/"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/flatirongrille/"><i class="fab fa-instagram"></i></a>
