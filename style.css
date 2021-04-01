@@ -507,6 +507,6 @@ input[type=checkbox]:checked + label {
     padding-top: 5.7%;
 } */
 .orderButton-align {
-    text-align: right;
+    text-align: center;
     margin-right: 2.4em;
 }
