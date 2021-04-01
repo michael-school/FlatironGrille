@@ -517,9 +517,6 @@ input[type=checkbox]:checked + label {
     z-index: 1;
     left: 5%;
 }
-.btn-outline-primary{
-    color:#b00012;
-    border:none;
-    background-color: transparent;
-    border-radius: 50%;
+.offcanavasBody{
+
 }
