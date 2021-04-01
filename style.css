@@ -112,7 +112,7 @@ footer .logo {
     background-color: #92000f;
     border: 1px solid #92000f;
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary:focus {
     background-color: #990010;
     border: 1px solid #990010;
 }
@@ -502,11 +502,21 @@ input[type=checkbox]:checked + label {
     padding-right:0;
 }
 
-/*--- Order Now --*/
-/* .spacing {
-    padding-top: 5.7%;
-} */
-.orderButton-align {
-    text-align: center;
-    margin-right: 2.4em;
+/* order page */
+
+#order-menu{
+    margin-top: 2em;
+}
+#order-menu .col-12{
+    text-align: right;
+}
+#cart-button{
+    position:fixed;
+    border-radius: 50%;
+    font-size: 2em;
+    z-index: 1;
+    left: 5%;
+}
+.offcanavasBody{
+
 }
