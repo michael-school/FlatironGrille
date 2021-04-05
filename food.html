@@ -59,7 +59,29 @@
         <nav class="menu-control">
             <ul class="nav nav-pills justify-content-center">
                 <li class="nav-item">
-                    <a class="active menuTab-font nav-link" href="food.html">Food Menu</a>
+                    <!-- <a class="active menuTab-font nav-link" href="food.html">Food Menu</a> -->
+                    <!-- Example split danger button -->
+                    <div class="btn-group">
+                        <a href="food.html"><button type="button" class="btn btn-danger active menuTab-font nav-link">Food Menu</button></a>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#Appetizers">Appetizers</a>
+                            <a class="dropdown-item" href="#SpecialtySalads">Specialty Salads</a>   
+                            <a class="dropdown-item" href="#Platters">Platters</a>                         
+                            <a class="dropdown-item" href="#KidsMenu">Kids Menu</a>
+                            <a class="dropdown-item" href="#FromTheGrille">From The Grille</a>
+                            <a class="dropdown-item" href="#SteakChops">Steak & Chops</a>
+                            <a class="dropdown-item" href="#Seafood">Seafood</a>
+                            <a class="dropdown-item" href="#Pasta">Pasta</a>
+                            <a class="dropdown-item" href="#SurfTurf">Surf & Turf Combo</a>
+                            <a class="dropdown-item" href="#Poultry">Poultry</a>
+                            <a class="dropdown-item" href="#DinnerSalads">Dinner Salads</a>
+                            <a class="dropdown-item" href="#Sides">Sides</a>
+                            <a class="dropdown-item" href="#Desserts">Desserts</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class=" menuTab-font nav-link" href="drink.html">Drink Menu</a>
@@ -72,7 +94,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Appetizers</h4>
+                                <h4 class="card-title" id="Appetizers">Appetizers</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -178,7 +200,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Specialty Salads</h4>
+                                <h4 class="card-title" id="SpecialtySalads">Specialty Salads</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -283,7 +305,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Platters</h4>
+                                <h4 class="card-title" id="Platters">Platters</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -326,7 +348,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Kids Menu<p>(under 10)</p>
+                                <h4 class="card-title" id="KidsMenu">Kids Menu<p>(under 10)</p>
                                 </h4>
                                 <ul class="card-text">
                                     <li>
@@ -368,7 +390,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">From The Grille</h4>
+                                <h4 class="card-title" id="FromTheGrille">From The Grille</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -487,7 +509,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Steak & Chops</h4>
+                                <h4 class="card-title" id="SteakChops">Steak & Chops</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -586,7 +608,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Seafood</h4>
+                                <h4 class="card-title" id="Seafood">Seafood</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -634,7 +656,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Pasta</h4>
+                                <h4 class="card-title" id="Pasta">Pasta</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -693,7 +715,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Surf & Turf Combo</h4>
+                                <h4 class="card-title" id="SurfTurf">Surf & Turf Combo</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -719,7 +741,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Poultry</h4>
+                                <h4 class="card-title" id="Poultry">Poultry</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -769,7 +791,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Dinner Salads</h4>
+                                <h4 class="card-title" id="DinnerSalads">Dinner Salads</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -800,7 +822,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Sides</h4>
+                                <h4 class="card-title" id="Sides">Sides</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
@@ -851,7 +873,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Desserts</h4>
+                                <h4 class="card-title" id="Desserts">Desserts</h4>
                                 <ul class="card-text">
                                     <li>
                                         <div class="row">
