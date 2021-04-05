@@ -525,6 +525,19 @@ input[type=checkbox]:checked + label {
     right:25%;
     transform: translateY(-90%);
 }
-.offcanavasBody{
-    font-family: cursive;
+.btn-outline-primary, .btn-outline-primary:focus, .btn-outline-primary:active{
+    background-color: transparent;
+    border:none;
+    color:#b00012;
+    font-weight:bold;
+    border:none;
+    box-shadow: none;
+}
+.btn-outline-primary:hover{
+    background-color: transparent;
+    color:#92000f;
+}
+.btn-outline-primary:focus {
+    border:none !important;
+    box-shadow: none !important;
 }
