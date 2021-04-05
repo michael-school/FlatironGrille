@@ -530,6 +530,6 @@ input[type=checkbox]:checked + label {
     transform: translateY(-90%);
 }
 /*--- Food Menu --*/
-#Appetizers {
-    font-family: comfortaaLight;
+.dropdown-menu {
+    color: #b00012;
 }
