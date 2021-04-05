@@ -152,7 +152,7 @@ footer .logo {
     margin-right: auto;
 }
 .column-padding {
-    padding: 2rem;
+    padding: 2.1rem;
     background-color: #212121;
 }
 
@@ -546,7 +546,6 @@ input[type=checkbox]:checked + label {
     box-shadow: none !important;
 }
 /*--- Food Menu --*/
-
 .dropdown-menu {
     color: #b00012;
 }
