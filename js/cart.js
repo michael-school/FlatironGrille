@@ -20,8 +20,20 @@ function doShowAll() {
         //Bind the row to HTML table.
         document.getElementById('order').innerHTML = list;
     }
+    updateCounter();
 }
+
+//cart counter
+function updateCounter(){
+    if (localStorage.length == 0) {
+        document.getElementById('cart-counter').innerHTML = "";
+    }else{
+        document.getElementById('cart-counter').innerHTML = localStorage.length;
+    }
+}
+
 window.load = doShowAll();
+
 function addItem(itemNum) {
     let itemName = document.getElementById("item" + itemNum).innerText;
     let itemPrice = document.getElementById("price" + itemNum).innerText;
@@ -34,6 +46,7 @@ function clearAll() {
     localStorage.clear();
     doShowAll();
 }
+//minus
 function subtractOne(itemName) {
     let dataObj = JSON.parse(localStorage.getItem(itemName));
     if (dataObj.quantity > 1) {
@@ -44,6 +57,7 @@ function subtractOne(itemName) {
         console.log(itemName, itemData);
     }
 }
+//plus
 function addOne(itemName) {
     let dataObj = JSON.parse(localStorage.getItem(itemName));
     dataObj.quantity += 1;
@@ -51,3 +65,5 @@ function addOne(itemName) {
     localStorage.setItem(itemName, itemData);
     doShowAll();
 }
+
+
