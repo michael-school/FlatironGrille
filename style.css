@@ -516,13 +516,18 @@ input[type=checkbox]:checked + label {
 }
 #cart-button{
     position:fixed;
-    border-radius: 50%;
-    font-size: 2em;
     z-index: 1;
     left: 5%;
 }
-.offcanavasBody{
-
+#cart-button button{
+    border-radius: 50%;
+    font-size: 2em;
+}
+#cart-counter{
+    position:relative;
+    z-index:2;
+    right:25%;
+    transform: translateY(-90%);
 }
 /*--- Food Menu --*/
 #Appetizers {

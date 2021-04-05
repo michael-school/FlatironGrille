@@ -56,10 +56,13 @@
     </header>
     <main>
         <!--Cart Button-->
-        <button id="cart-button" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-            aria-controls="offcanvasCart">
-            <i class="fas fa-shopping-cart"></i>
-        </button>
+        <div id="cart-button">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+            <span id="cart-counter" class="badge bg-secondary">1</span>
+        </div>
         <!--Menu-->
         <div class="container-fluid menu" id="order-menu">
             <div class="row gx-5 justify-content-center">
@@ -402,7 +405,7 @@
                                                 <div class="two-button text-nowrap">
                                                     <button type="button" class="btn btn-primary"
                                                         onclick="addItem(17)">Add
-                                                        to Order (10)</button> 
+                                                        to Order (10)</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1278,7 +1281,7 @@
 
             </div>
         </div>
-        
+
 
         <!--OffCanvas-->
         <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
@@ -1324,7 +1327,7 @@
         </div>
     </footer>
 
-    
+
     <script src="js\bootstrap.bundle.min.js">
     </script>
     <script src="js\cart.js"></script>
