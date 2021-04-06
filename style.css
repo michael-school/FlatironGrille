@@ -80,6 +80,29 @@ footer .logo {
     font-size: 2.5em;
     padding: 1rem;
 }
+
+/* scroll to top */
+#scrollButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #scrollButton:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
 /*--- Carousel --*/
 .carousel-inner img {
     width: 100%;
@@ -114,9 +137,11 @@ footer .logo {
     border: 1px solid #92000f;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary:focus {
-    background-color: #990010;
-    border: 1px solid #990010;
+    background-color: #b00012;
+    border: 1px solid #b00012;
 }
+button:focus { outline: none; }
+
 @media screen and (min-width: 576px) {
     .carousel-caption h1 {
         font-size: 3em;
@@ -417,8 +442,8 @@ input[type=checkbox]:checked + label {
     text-align: center;
 }
 .menu{
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .menu .card{
     margin-bottom: 1em;
@@ -548,4 +573,9 @@ input[type=checkbox]:checked + label {
 /*--- Food Menu --*/
 .dropdown-menu {
     color: #b00012;
+}
+
+:focus {
+    box-shadow: none !important;
+    border: none !important;
 }
