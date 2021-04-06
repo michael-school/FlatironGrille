@@ -140,6 +140,8 @@ footer .logo {
     background-color: #990010;
     border: 1px solid #990010;
 }
+button:focus { outline: none; }
+
 @media screen and (min-width: 576px) {
     .carousel-caption h1 {
         font-size: 3em;
@@ -440,8 +442,8 @@ input[type=checkbox]:checked + label {
     text-align: center;
 }
 .menu{
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .menu .card{
     margin-bottom: 1em;
@@ -571,4 +573,9 @@ input[type=checkbox]:checked + label {
 /*--- Food Menu --*/
 .dropdown-menu {
     color: #b00012;
+}
+
+:focus {
+    box-shadow: none !important;
+    border: none !important;
 }
