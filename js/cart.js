@@ -66,4 +66,7 @@ function addOne(itemName) {
     doShowAll();
 }
 
-
+//trash button
+function toggleDelete(){
+    
+}
