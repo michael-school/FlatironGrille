@@ -218,13 +218,6 @@ figure {
 }
 /*--- Contact Us Page --*/
 
-.contact h1 {
-    font-family: comfortaaMedium;
-    font-weight: 600;
-    font-size: 72px;
-    color: white;
-    text-align: center;
-}
 
 .contact h4 {
     font-family: comfortaaLight;
@@ -241,23 +234,23 @@ figure {
 .events {
     background-color: black;
 }
-.events h1 {
+h1.title {
     font-family: comfortaaMedium;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 50px;
     color: white;
     text-align: center;
+}
+.title {
+    padding-top: .5em;
 }
 .events .column-padding {
     background-color: #000;
 }
-.events-title {
-    font-family: comfortaaMedium;
-    font-size: 72px
-}
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
+
+@media screen and (min-width: 700px){
+    h1.title {
+        font-size: 72px;
     }
 }
 /*--- Inputs --*/
@@ -375,7 +368,7 @@ input[type=checkbox]:checked + label {
 }
   #myImg:hover {opacity: 0.7;}
   
-  /* The Modal (background) */
+/*--- The Modal (background) --*/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -429,8 +422,6 @@ input[type=checkbox]:checked + label {
     text-decoration: none;
     cursor: pointer;
 }
-  
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
