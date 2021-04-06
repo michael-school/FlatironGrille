@@ -137,8 +137,8 @@ footer .logo {
     border: 1px solid #92000f;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary:focus {
-    background-color: #990010;
-    border: 1px solid #990010;
+    background-color: #b00012;
+    border: 1px solid #b00012;
 }
 button:focus { outline: none; }
 
