@@ -546,6 +546,13 @@ input[type=checkbox]:checked + label {
     right:25%;
     transform: translateY(-90%);
 }
+tr.delete:hover{
+    background-color: rgba(228, 35, 35, 0.486);
+}
+.offcanvas-body button.active{
+    background-color: grey !important;
+}
+
 .btn-outline-primary, .btn-outline-primary:focus, .btn-outline-primary:active{
     background-color: transparent;
     border:none;

@@ -10,7 +10,7 @@ function doShowAll() {
         let minusButton = `<button class=" btn-outline-primary" onclick="subtractOne('${key}')">-</button>`;
         let plusButton = `<button class=" btn-outline-primary" onclick="addOne('${key}')">+</button>`;
         //create row
-        list += "<tr><td>" + key + "</td>\n<td>" +
+        list += '<tr class="foodRow"><td class="cartItemName">' + key + "</td>\n<td>" +
             dataObj.price + "</td>\n<td>" + minusButton + dataObj.quantity + plusButton + "</td></tr>\n";
     }
     //If no item exists in the cart.
@@ -54,7 +54,6 @@ function subtractOne(itemName) {
         let itemData = JSON.stringify(dataObj);
         localStorage.setItem(itemName, itemData);
         doShowAll();
-        console.log(itemName, itemData);
     }
 }
 //plus
@@ -67,6 +66,37 @@ function addOne(itemName) {
 }
 
 //trash button
+
+//delete item when clicked
+function deleteItem(key){
+    localStorage.removeItem(key);
+    doShowAll();
+    addDeleteFunctionality();
+}
+
+function addDeleteFunctionality(){
+    //create array of food rows
+    let foodRows = document.getElementsByClassName("foodRow");
+    if (deleteOn){
+        //add delete class
+        for (var i = 0; i < foodRows.length; i++) {
+            foodRows[i].classList.add("delete");
+            let cartItemName = foodRows[i].getElementsByTagName("td")[0].innerHTML;
+            foodRows[i].addEventListener('click', function(){ deleteItem(cartItemName); });
+        }
+    } else {
+        //remove delete class
+        for (var i = 0; i < foodRows.length; i++) {
+            foodRows[i].classList.remove("delete");
+            let cartItemName = foodRows[i].getElementsByTagName("td")[0].innerHTML;
+            foodRows[i].removeEventListener('click', function(){ deleteItem(cartItemName); });
+        }
+    }
+}
+
+let deleteOn = false;
 function toggleDelete(){
-    
+    deleteOn = deleteOn ? false : true;
+    doShowAll();
+    addDeleteFunctionality();
 }
