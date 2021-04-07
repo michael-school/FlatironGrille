@@ -8,7 +8,7 @@ function doShowAll() {
         let dataObj = JSON.parse(localStorage.getItem(key));
         //create buttons for quantity
         let minusButton = `<button class=" btn-outline-primary" onclick="subtractOne('${key}')">-</button>`;
-        let plusButton = `<button class=" btn-outline-primary" onclick="addOne('${key}')">+</button>`;
+        let plusButton = `<button class=" btn-outline-primary" onclick="addOne('` + key + `')">+</button>`;
         //create row
         list += '<tr class="foodRow"><td class="cartItemName">' + key + "</td>\n<td>" +
             dataObj.price + "</td>\n<td>" + minusButton + dataObj.quantity + plusButton + "</td></tr>\n";
@@ -70,11 +70,11 @@ function addOne(itemName) {
 //delete item when clicked
 function deleteItem(key){
     localStorage.removeItem(key);
-    doShowAll();
     addDeleteFunctionality();
 }
 
 function addDeleteFunctionality(){
+    doShowAll();
     //create array of food rows
     let foodRows = document.getElementsByClassName("foodRow");
     if (deleteOn){
@@ -97,6 +97,5 @@ function addDeleteFunctionality(){
 let deleteOn = false;
 function toggleDelete(){
     deleteOn = deleteOn ? false : true;
-    doShowAll();
     addDeleteFunctionality();
 }
