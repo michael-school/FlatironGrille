@@ -409,7 +409,7 @@ input[type=checkbox]:checked + label {
 }
 .close {
     position: absolute;
-    top: 75%;
+    bottom: 80%;
     right: 10%;
     color: #f1f1f1;
     font-size: 40px;
