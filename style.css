@@ -408,8 +408,8 @@ input[type=checkbox]:checked + label {
     to {transform:scale(1)}
 }
 .close {
-    position: absolute;
-    bottom: 80%;
+    position: fixed;
+    bottom: 40%;
     right: 10%;
     color: #f1f1f1;
     font-size: 40px;
