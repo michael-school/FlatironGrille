@@ -1283,7 +1283,7 @@
             </div>
         </div>
 
-        <button onclick="scrollToTop()" id="scrollButton">^</button>
+        <button onclick="scrollToTop()" id="scrollButton"><i class="fas fa-chevron-up"></i></button>
         <!--OffCanvas-->
         <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
             id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
@@ -1294,6 +1294,11 @@
             </div>
             <div class="offcanvas-body">
                 <table class="table" id="order"></table>
+                <div class="container-fluid">
+                    <div class="row">
+                        <p class="total">Total: <span id="cart-total"></span></p>
+                    </div>
+                </div>
                 <button type="button" class="btn btn-primary" onclick="clearAll()">Clear</button>
                 <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off" onclick="toggleDelete()"><i class="fas fa-trash"></i></button>
 

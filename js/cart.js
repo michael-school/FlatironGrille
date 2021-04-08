@@ -20,7 +20,19 @@ function doShowAll() {
         //Bind the row to HTML table.
         document.getElementById('order').innerHTML = list;
     }
+    updateTotal();
     updateCounter();
+}
+
+//cart total
+function updateTotal(){
+    let total = 0;
+    for (var i = 0; i < localStorage.length; i++) {
+        let dataObj = JSON.parse(localStorage.getItem(localStorage.key(i)));
+        priceNum = parseFloat(dataObj.price.replace(/\$/g,''));
+        total = total + priceNum * dataObj.quantity;
+    }
+    document.getElementById('cart-total').innerHTML = `$${total}`;
 }
 
 //cart counter
@@ -34,14 +46,19 @@ function updateCounter(){
 
 window.load = doShowAll();
 
+//add item when clicked
 function addItem(itemNum) {
     let itemName = document.getElementById("item" + itemNum).innerText;
-    let itemPrice = document.getElementById("price" + itemNum).innerText;
-    let dataObj = { price: itemPrice, quantity: 1 };
-    let itemData = JSON.stringify(dataObj);
-    localStorage.setItem(itemName, itemData);
-    doShowAll();
+    //If item doesn't already exist
+    if(!localStorage.getItem(itemName)){
+        let itemPrice = document.getElementById("price" + itemNum).innerText;
+        let dataObj = { price: itemPrice, quantity: 1 };
+        let itemData = JSON.stringify(dataObj);
+        localStorage.setItem(itemName, itemData);
+        doShowAll();
+    }
 }
+
 function clearAll() {
     localStorage.clear();
     doShowAll();
@@ -94,6 +111,7 @@ function addDeleteFunctionality(){
     }
 }
 
+//toggle delete button
 let deleteOn = false;
 function toggleDelete(){
     deleteOn = deleteOn ? false : true;
