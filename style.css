@@ -367,7 +367,7 @@ input[type=checkbox]:checked + label {
     transition: 0.3s;
 }
 #myImg:hover {opacity: 0.7;}
-  
+
 /*--- The Modal (background) --*/
 .modal {
     display: none; /* Hidden by default */
@@ -416,7 +416,6 @@ input[type=checkbox]:checked + label {
     font-weight: bold;
     transition: 0.3s;
 }
-  
 .close:hover, .close:focus {
     color: #bbb;
     text-decoration: none;

@@ -1,5 +1,5 @@
 
-//gallery page
+// Gallery Page
 
 var modal = document.getElementById("myModal");
 
