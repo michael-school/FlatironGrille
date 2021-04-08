@@ -366,7 +366,7 @@ input[type=checkbox]:checked + label {
     cursor: pointer;
     transition: 0.3s;
 }
-  #myImg:hover {opacity: 0.7;}
+#myImg:hover {opacity: 0.7;}
   
 /*--- The Modal (background) --*/
 .modal {
@@ -409,8 +409,8 @@ input[type=checkbox]:checked + label {
 }
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 75%;
+    right: 10%;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
