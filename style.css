@@ -266,6 +266,14 @@ h1.title {
         font-size: 72px;
     }
 }
+/* phone number */
+.tel {
+    color:#b00012;
+    text-decoration: none;
+}
+.tel:hover {
+    color:#92000f;
+}
 /*--- Inputs --*/
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
