@@ -25,14 +25,18 @@ function doShowAll() {
 }
 
 //cart total
+let toUSD = Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: 'USD'
+});
 function updateTotal(){
-    let total = 0;
+    let total = 0.00;
     for (var i = 0; i < localStorage.length; i++) {
         let dataObj = JSON.parse(localStorage.getItem(localStorage.key(i)));
         priceNum = parseFloat(dataObj.price.replace(/\$/g,''));
         total = total + priceNum * dataObj.quantity;
     }
-    document.getElementById('cart-total').innerHTML = `$${total}`;
+    document.getElementById('cart-total').innerHTML = toUSD.format(total);
 }
 
 //cart counter
