@@ -266,6 +266,16 @@ h1.title {
         font-size: 72px;
     }
 }
+@media screen and (max-width: 992px){
+    #dessertsLg{
+        display:none;
+    }
+}
+@media screen and (min-width: 992px){
+    #dessertsSm{
+        display:none;
+    }
+}
 #events-info{
     color:white;
 }
