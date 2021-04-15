@@ -98,12 +98,15 @@ function addDeleteFunctionality(){
     doShowAll();
     //create array of food rows
     let foodRows = document.getElementsByClassName("foodRow");
+    let popover = bootstrap.Popover.getInstance(document.getElementById('deletePopover'))
     if (deleteOn){
         //add delete class
         for (var i = 0; i < foodRows.length; i++) {
             foodRows[i].classList.add("delete");
             let cartItemName = foodRows[i].getElementsByTagName("td")[0].innerHTML;
             foodRows[i].addEventListener('click', function(){ deleteItem(cartItemName); });
+            //disable popover
+            popover.disable();
         }
     } else {
         //remove delete class
@@ -111,6 +114,8 @@ function addDeleteFunctionality(){
             foodRows[i].classList.remove("delete");
             let cartItemName = foodRows[i].getElementsByTagName("td")[0].innerHTML;
             foodRows[i].removeEventListener('click', function(){ deleteItem(cartItemName); });
+            // enable popover
+            popover.enable();
         }
     }
 }
@@ -121,3 +126,13 @@ function toggleDelete(){
     deleteOn = deleteOn ? false : true;
     addDeleteFunctionality();
 }
+
+//popover
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+    //dismiss
+var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+    trigger: 'focus'
+  })
