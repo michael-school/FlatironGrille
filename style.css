@@ -49,6 +49,7 @@ body {
 header .logo {
     width: 5rem;
     border-radius: 50%;
+    margin-left: .8em;
 }
 header .navbar-nav {
     text-align: right;
@@ -260,7 +261,6 @@ h1.title {
 .events .menu-price {
     letter-spacing: .1em;
 }
-
 @media screen and (min-width: 700px){
     h1.title {
         font-size: 72px;
