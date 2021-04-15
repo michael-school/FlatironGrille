@@ -247,6 +247,19 @@ figure {
 .events {
     background-color: black;
 }
+#events-info hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: white 3px solid;
+}
+
+#events-info hr + p{
+    font-size: 1.3em;
+}
+#events-info p{
+    margin-bottom: 1.5em;
+}
 h1.title {
     font-family: comfortaaMedium;
     font-weight: 600;
@@ -259,6 +272,15 @@ h1.title {
 }
 .events .menu-price {
     letter-spacing: .1em;
+}
+.events h5{
+    font-weight: bold;
+}
+#events-info{
+    color:white;
+}
+#set-menus{
+    margin-top: 2em;
 }
 
 @media screen and (min-width: 700px){
@@ -276,9 +298,7 @@ h1.title {
         display:none;
     }
 }
-#events-info{
-    color:white;
-}
+
 /* phone number */
 .tel {
     color:#b00012;
