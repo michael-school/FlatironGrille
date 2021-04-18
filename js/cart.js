@@ -39,7 +39,7 @@ function updateTotal(){
     document.getElementById('cart-total').innerHTML = toUSD.format(total);
 }
 
-//cart counter
+//cart item counter
 function updateCounter(){
     if (localStorage.length == 0) {
         document.getElementById('cart-counter').innerHTML = "";
@@ -53,7 +53,7 @@ window.load = doShowAll();
 //add item when clicked
 function addItem(itemNum) {
     let itemName = document.getElementById("item" + itemNum).innerText;
-    //If item doesn't already exist
+    //add item only if it doesn't already exist
     if(!localStorage.getItem(itemName)){
         let itemPrice = document.getElementById("price" + itemNum).innerText;
         let dataObj = { price: itemPrice, quantity: 1 };
@@ -100,23 +100,25 @@ function addDeleteFunctionality(){
     let foodRows = document.getElementsByClassName("foodRow");
     let popover = bootstrap.Popover.getInstance(document.getElementById('deletePopover'))
     if (deleteOn){
-        //add delete class
+        //add delete class and related functionality
         for (var i = 0; i < foodRows.length; i++) {
             foodRows[i].classList.add("delete");
             let cartItemName = foodRows[i].getElementsByTagName("td")[0].innerHTML;
             foodRows[i].addEventListener('click', function(){ deleteItem(cartItemName); });
-            //disable popover
-            popover.disable();
         }
+        //disable popover
+        popover.disable();
     } else {
-        //remove delete class
+        //remove delete class and related functionality
         for (var i = 0; i < foodRows.length; i++) {
             foodRows[i].classList.remove("delete");
             let cartItemName = foodRows[i].getElementsByTagName("td")[0].innerHTML;
             foodRows[i].removeEventListener('click', function(){ deleteItem(cartItemName); });
-            // enable popover
-            popover.enable();
+            
         }
+        //remove focus from button (so that popover can be re-clicked) and re-enable popover
+        document.getElementById('deleteButton').blur();
+        popover.enable();
     }
 }
 
@@ -127,12 +129,8 @@ function toggleDelete(){
     addDeleteFunctionality();
 }
 
-//popover
+//initialize popover
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
-    //dismiss
-var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-    trigger: 'focus'
-  })
