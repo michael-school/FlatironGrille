@@ -269,16 +269,19 @@ h1.title {
 .events h5 {
     font-weight: bold;
 }
-.events h3{
+
+.events h3 {
     font-weight: bold;
     margin-top: .5em;
 }
-.events h3 + hr{
+
+.events h3+hr {
     border: solid 2px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+
 #events-info {
     color: white;
 }
@@ -762,7 +765,8 @@ tr.delete:hover {
 
 
 @media screen and (min-width: 992px) {
-    /* Moving the Dessert Card on events page to a different column  */    
+
+    /* Moving the Dessert Card on events page to a different column  */
     #dessertsSm {
         display: none;
     }
@@ -773,11 +777,11 @@ tr.delete:hover {
 
     /*wineglass on drinks page */
     #wineglass {
-        width:30%;
+        width: 30%;
     }
-    
+
     /*turn off dropdown for larger screens*/
-    .menu-control .dropdown-toggle{
-        display:none;
+    .menu-control .dropdown-toggle {
+        display: none;
     }
 }

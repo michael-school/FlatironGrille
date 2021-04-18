@@ -13,7 +13,7 @@ function doShowAll() {
         list += '<tr class="foodRow"><td class="cartItemName">' + key + "</td>\n<td>" +
             dataObj.price + "</td>\n<td>" + minusButton + dataObj.quantity + plusButton + "</td></tr>\n";
     }
-    //If no item exists in the cart.
+    //If no item exists in the cart, don't show the headers
     if (list == "<tr><th>Item</th><th>Price</th><th>Quantity</th></tr>\n") {
         document.getElementById('order').innerHTML = "";
     } else {
@@ -29,21 +29,22 @@ let toUSD = Intl.NumberFormat("en-US", {
     style: "currency",
     currency: 'USD'
 });
-function updateTotal(){
+
+function updateTotal() {
     let total = 0.00;
     for (var i = 0; i < localStorage.length; i++) {
         let dataObj = JSON.parse(localStorage.getItem(localStorage.key(i)));
-        priceNum = parseFloat(dataObj.price.replace(/\$/g,''));
+        priceNum = parseFloat(dataObj.price.replace(/\$/g, ''));
         total = total + priceNum * dataObj.quantity;
     }
     document.getElementById('cart-total').innerHTML = toUSD.format(total);
 }
 
 //cart item counter
-function updateCounter(){
+function updateCounter() {
     if (localStorage.length == 0) {
         document.getElementById('cart-counter').innerHTML = "";
-    }else{
+    } else {
         document.getElementById('cart-counter').innerHTML = localStorage.length;
     }
 }
@@ -54,9 +55,12 @@ window.load = doShowAll();
 function addItem(itemNum) {
     let itemName = document.getElementById("item" + itemNum).innerText;
     //add item only if it doesn't already exist
-    if(!localStorage.getItem(itemName)){
+    if (!localStorage.getItem(itemName)) {
         let itemPrice = document.getElementById("price" + itemNum).innerText;
-        let dataObj = { price: itemPrice, quantity: 1 };
+        let dataObj = {
+            price: itemPrice,
+            quantity: 1
+        };
         let itemData = JSON.stringify(dataObj);
         localStorage.setItem(itemName, itemData);
         doShowAll();
@@ -89,22 +93,24 @@ function addOne(itemName) {
 //trash button
 
 //delete item when clicked
-function deleteItem(key){
+function deleteItem(key) {
     localStorage.removeItem(key);
     addDeleteFunctionality();
 }
 
-function addDeleteFunctionality(){
+function addDeleteFunctionality() {
     doShowAll();
     //create array of food rows
     let foodRows = document.getElementsByClassName("foodRow");
     let popover = bootstrap.Popover.getInstance(document.getElementById('deletePopover'))
-    if (deleteOn){
+    if (deleteOn) {
         //add delete class and related functionality
         for (var i = 0; i < foodRows.length; i++) {
             foodRows[i].classList.add("delete");
             let cartItemName = foodRows[i].getElementsByTagName("td")[0].innerHTML;
-            foodRows[i].addEventListener('click', function(){ deleteItem(cartItemName); });
+            foodRows[i].addEventListener('click', function () {
+                deleteItem(cartItemName);
+            });
         }
         //disable popover
         popover.disable();
@@ -113,8 +119,10 @@ function addDeleteFunctionality(){
         for (var i = 0; i < foodRows.length; i++) {
             foodRows[i].classList.remove("delete");
             let cartItemName = foodRows[i].getElementsByTagName("td")[0].innerHTML;
-            foodRows[i].removeEventListener('click', function(){ deleteItem(cartItemName); });
-            
+            foodRows[i].removeEventListener('click', function () {
+                deleteItem(cartItemName);
+            });
+
         }
         //remove focus from button (so that popover can be re-clicked) and re-enable popover
         document.getElementById('deleteButton').blur();
@@ -124,7 +132,8 @@ function addDeleteFunctionality(){
 
 //toggle delete button
 let deleteOn = false;
-function toggleDelete(){
+
+function toggleDelete() {
     deleteOn = deleteOn ? false : true;
     addDeleteFunctionality();
 }
@@ -132,5 +141,5 @@ function toggleDelete(){
 //initialize popover
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
+    return new bootstrap.Popover(popoverTriggerEl)
 })
