@@ -20,7 +20,7 @@
 <body>
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-md navbar-dark sticky-top navbar-font">
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img class="logo" src="img/favicon.png" alt="flatiron logo">
@@ -41,7 +41,7 @@
                             <a class="nav-link active" href="order.html">Order</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="events.html">Events/Banquets</a>
+                            <a class="nav-link" href="events.html">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact_us.html">Contact</a>
@@ -55,11 +55,11 @@
         </nav>
     </header>
     <main>
-        
+
         <!--Cart Button-->
         <div id="cart-button">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">
                 <i class="fas fa-shopping-cart"></i>
             </button>
             <span id="cart-counter" class="badge bg-secondary">1</span>
@@ -67,7 +67,7 @@
         <!--Menu-->
         <div class="container-fluid menu" id="order-menu">
             <div class="row gx-5 justify-content-center">
-                <div class="col-md-9">
+                <div class="col-md-9 col-lg-8 col-xl-7">
                     <div class="row">
                         <div class="card">
                             <div class="card-body">
@@ -137,22 +137,14 @@
                                             </p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
-                                                <div class="two-button text-nowrap">
-                                                    <button type="button" class="btn btn-primary"
-                                                        onclick="addItem(4)">Add
-                                                        to Order (10)</button>
-                                                </div>
+                                            <div class="col-auto two-button text-nowrap">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(4)">Add
+                                                    to Order (10)</button>
                                             </div>
-                                        </div>
-                                        <br>
-                                        <div class="row justify-content-end">
-                                            <div class="col-md-6">
-                                                <div class="two-button text-nowrap">
-                                                    <button type="button" class="btn btn-primary"
-                                                        onclick="addItem(5)">Add
-                                                        to Order (5)&nbsp; </button>
-                                                </div>
+                                            <div class="col-auto two-button text-nowrap">
+
+                                                <button type="button" class="btn btn-primary" onclick="addItem(5)">Add
+                                                    to Order (5)&nbsp; </button>
                                             </div>
                                         </div>
                                     </li>
@@ -352,35 +344,7 @@
                                     </li>
                                     <hr>
                                 </ul>
-                                <div class="extra-menu-info card-text">
-                                    <h6>*Add:</h6>
-                                    <ul>
-                                        <li>
-                                            <p>Chicken $8, Shrimp $11, Salmon $14, or Steak</p>
-                                        </li>
-                                    </ul>
-                                    <h6>*Dressings:</h6>
-                                    <ul>
-                                        <li>
-                                            <p>Bleu Cheese</p>
-                                        </li>
-                                        <li>
-                                            <p>Ranch</p>
-                                        </li>
-                                        <li>
-                                            <p>Poppyseed</p>
-                                        </li>
-                                        <li>
-                                            <p>Balsamic Vinagrette</p>
-                                        </li>
-                                        <li>
-                                            <p>Honey Mustard</p>
-                                        </li>
-                                        <li>
-                                            <p>Wine and Cheese and Oil and Vinegar</p>
-                                        </li>
-                                    </ul>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -402,22 +366,13 @@
                                                 French fries and house made coleslaw.</p>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
-                                                <div class="two-button text-nowrap">
-                                                    <button type="button" class="btn btn-primary"
-                                                        onclick="addItem(17)">Add
-                                                        to Order (10)</button>
-                                                </div>
+                                            <div class="col-auto two-button text-nowrap">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(17)">Add
+                                                    to Order (10)</button>
                                             </div>
-                                        </div>
-                                        <br>
-                                        <div class="row justify-content-end">
-                                            <div class="col-md-6">
-                                                <div class="two-button text-nowrap">
-                                                    <button type="button" class="btn btn-primary"
-                                                        onclick="addItem(18)">Add
-                                                        to Order (5)&nbsp; </button>
-                                                </div>
+                                            <div class="col-auto two-button text-nowrap">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(18)">Add
+                                                    to Order (5)&nbsp; </button>
                                             </div>
                                         </div>
                                     </li>
@@ -602,11 +557,6 @@
                                             <p>8 oz sliced, roasted prime beef dipped in au jus served in artisan roll
                                                 with a side of creamy horseradish sauce.</p>
                                         </div>
-                                        <div class="extra-menu-info card-text">
-                                            <p><br>
-                                                <h6>*Add Cheese and Grilled Onions $3</h6>
-                                            </p>
-                                        </div>
                                         <div class="row justify-content-end">
                                             <div class="col-12">
                                                 <button type="button" class="btn btn-primary" onclick="addItem(28)">Add
@@ -759,22 +709,13 @@
                                             <div class="col menu-price">(3-bone)-<span id="price38">$37</span></div>
                                         </div>
                                         <div class="row justify-content-end">
-                                            <div class="col-md-6">
-                                                <div class="two-button text-nowrap">
-                                                    <button type="button" class="btn btn-primary"
-                                                        onclick="addItem(37)">Add
-                                                        to Order (5)&nbsp; </button>
-                                                </div>
+                                            <div class="col-auto two-button text-nowrap">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(37)">Add
+                                                    to Order (5)&nbsp; </button>
                                             </div>
-                                        </div>
-                                        <br>
-                                        <div class="row justify-content-end">
-                                            <div class="col-md-6">
-                                                <div class="two-button text-nowrap">
-                                                    <button type="button" class="btn btn-primary"
-                                                        onclick="addItem(38)">Add
-                                                        to Order (3)&nbsp; </button>
-                                                </div>
+                                            <div class="col-auto two-button text-nowrap">
+                                                <button type="button" class="btn btn-primary" onclick="addItem(38)">Add
+                                                    to Order (3)&nbsp; </button>
                                             </div>
                                         </div>
                                     </li>
@@ -792,36 +733,7 @@
                                         </div>
                                     </li>
                                     <hr>
-                                    <li>
-                                        <div class="extra-menu-info card-text">
-                                            <h6><i> &emsp; *served with dinner, Chopped Caesar or Small Grilled salad
-                                                    and choice of side.</i></h6>
-                                        </div>
-                                    </li>
                                 </ul>
-                                <div class="extra-menu-info card-text">
-                                    <h6>*Steak Toppers:</h6>
-                                    <ul>
-                                        <li>
-                                            <p>Maytag Bleu Cheese Crumbles $5</p>
-                                        </li>
-                                        <li>
-                                            <p>Louie Sauce (Cognac Peppercorn) $6</p>
-                                        </li>
-                                        <li>
-                                            <p>5 Grilled Shrimp $11</p>
-                                        </li>
-                                        <li>
-                                            <p>Oscar (lump crabmeat, asparagus, and Hollandaise sauce) $12</p>
-                                        </li>
-                                        <li>
-                                            <p>Sautéed Mushrooms $6</p>
-                                        </li>
-                                        <li>
-                                            <p>Umberta (creamed spinach) $6</p>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -836,7 +748,8 @@
                                             <div class="col menu-price" id="price40">$28</div>
                                         </div>
                                         <div class="row">
-                                            <p>Grilled and topped with tiger glaze and served with chef&rsquo;s vegetables and
+                                            <p>Grilled and topped with tiger glaze and served with chef&rsquo;s
+                                                vegetables and
                                                 choice of side.</p>
                                         </div>
                                         <div class="row justify-content-end">
@@ -870,7 +783,8 @@
                                             <div class="col menu-price" id="price42">$36</div>
                                         </div>
                                         <div class="row">
-                                            <p>Served with Roasted Pineapple Mango relish, chef&rsquo;s vegetables, and choice
+                                            <p>Served with Roasted Pineapple Mango relish, chef&rsquo;s vegetables, and
+                                                choice
                                                 of side.</p>
                                         </div>
                                         <div class="row justify-content-end">
@@ -881,12 +795,6 @@
                                         </div>
                                     </li>
                                     <hr>
-                                    <li>
-                                        <div class="extra-menu-info card-text">
-                                            <h6><i> &emsp; *served with dinner, Chopped Caesar or Small Grilled
-                                                    salad.</i></h6>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -964,12 +872,6 @@
                                         </div>
                                     </li>
                                     <hr>
-                                    <li>
-                                        <div class="extra-menu-info card-text">
-                                            <h6><i> &emsp; *served with dinner, Chopped Caesar or Small Grilled
-                                                    salad.</i></h6>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -993,12 +895,6 @@
                                         </div>
                                     </li>
                                     <hr>
-                                    <li>
-                                        <div class="extra-menu-info card-text">
-                                            <h6><i> &emsp; *served with dinner, Chopped Caesar or Small Grilled salad
-                                                    and choice of side.</i></h6>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -1033,7 +929,8 @@
                                         </div>
                                         <div class="row">
                                             <p>Sautéed chicken breasts covered with tomato, basil, and pancetta cream
-                                                sauce on top of Parmesan risotto, served with chef&rsquo;s vegetables.</p>
+                                                sauce on top of Parmesan risotto, served with chef&rsquo;s vegetables.
+                                            </p>
                                         </div>
                                         <div class="row justify-content-end">
                                             <div class="col-12">
@@ -1061,12 +958,6 @@
                                         </div>
                                     </li>
                                     <hr>
-                                    <li>
-                                        <div class="extra-menu-info card-text">
-                                            <h6><i> &emsp; *served with dinner, Chopped Caesar or Small Grilled
-                                                    salad.</i></h6>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -1300,9 +1191,13 @@
                     </div>
                 </div>
                 <button type="button" class="btn btn-primary" onclick="clearAll()">Clear</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off" onclick="toggleDelete()"><i class="fas fa-trash"></i></button>
+                <span id="deletePopover" class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                    data-bs-trigger="focus" data-bs-placement="bottom" title="Click or Tap Items to Delete"
+                    data-bs-content="Click or tap the items you would like to remove, then click this button again.">
+                    <button id="deleteButton" type="button" class="btn btn-primary" data-bs-toggle="button"
+                        autocomplete="off" onclick="toggleDelete()"><i class="fas fa-trash"></i></button>
+                </span>
 
-                  
             </div>
         </div>
     </main>
@@ -1310,13 +1205,13 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 social footer-font" style="text-align:center">
+                <div class="col-md-4 social " style="text-align:center">
                     <img class="center logo" src="img/favicon.png" width="75px">
                     <p>Social Media</p>
                     <a href="https://www.facebook.com/flatirongrille/"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/flatirongrille/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/flatiron.grille/"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="col-md-4 footer-font" style="text-align:center">
+                <div class="col-md-4 " style="text-align:center">
                     <hr class="light">
                     <h5 style="text-align:center">Find Us</h5>
                     <hr class="light">
@@ -1324,7 +1219,7 @@
                     <p>Jackson, TN 38305</p>
                     <p>(731) 668-3528</p>
                 </div>
-                <div class="col-md-4 footer-font" style="text-align:center">
+                <div class="col-md-4 " style="text-align:center">
                     <hr class="light">
                     <h5 style="text-align:center">Our Hours</h5>
                     <hr class="light">
