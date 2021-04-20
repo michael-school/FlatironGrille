@@ -12,6 +12,13 @@
 ## Michael 
 
 ## Christian
+<ul>
+    <li>I made both of the 2 column sections and the fixed background in the home page.</li>
+    <li>I added the toast that makes the "Thank you for the message!" notification appear in the contact page. I also made it to where the input boxes reset after clicking the "Send Message" button.</li>
+    <li>Our logo originally didn't blend in well to the navbar, and the red looked a bit faded so I changed the color of the logo a little bit to make it look better. I also made the logo our favicon.</li>
+    <li>I added active classes to the navbar so it appears brighter depending on what page you are on.</li>
+    <li>I added some of the pictures and captions that are featured in the gallery page.</li>
+</ul>
 ## Shrey
 <ul>
     <li>Designed (not created) majority of the home page</li>
@@ -21,3 +28,4 @@
     <li>Designed and created the outline and content of the "Order" page (Michael gave functionality)</li>
     <li>Designed and created "Contact Us" page and added a contact form with a Google Maps iFrame displaying the location of Flatiron Grille</li>
     <li>Designed, created, and gave general functionality to the "Gallery" page (added "click to enlarge")</li>
+</ul>
