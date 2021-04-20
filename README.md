@@ -13,3 +13,11 @@
 
 ## Christian
 ## Shrey
+<ul>
+    <li>Designed (not created) majority of the home page</li>
+    <li>Designed, created, and ensured functionality of the carousel on the home page</li>
+    <li>Designed and created the footer with added logos and links to Flatiron's social media</li>
+    <li>Designed, created and enhanced the looks functionality of the food menu, as well as adding all content to the "Spirits" and "Cocktails" sections of the drink menu</li>
+    <li>Designed and created the outline and content of the "Order" page (Michael gave functionality)</li>
+    <li>Designed and created "Contact Us" page and added a contact form with a Google Maps iFrame displaying the location of Flatiron Grille</li>
+    <li>Designed, created, and gave general functionality to the "Gallery" page (added "click to enlarge")</li>
