@@ -12,12 +12,13 @@
 <hr>
 
 ## Michael 
-### Mobile First
-<p>I periodically checked our site's responsiveness and made the necessary changes to ensure a "mobile first" approach.</p>
+<ul>
+    <li>Mobile First: I periodically checked our site's responsiveness and made the necessary changes to ensure a "mobile first" approach where media queries alter the styles for larger screens.</li>
+    <li>Troubleshooting: </li>
+    <li>Cart: </li>
+    <li>Menu Structure: </li>
+</ul>
 
-### Troubleshooting
-### Cart
-### Menu Structure
 ## Christian
 <ul>
     <li>Made both of the 2 column sections and the fixed background in the home page.</li>
