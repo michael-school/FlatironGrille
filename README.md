@@ -26,7 +26,7 @@
     <li>Changed the color of the logo a little bit to make it look better, since the logo originally didn't blend in well to the navbar, and the red looked a bit faded, and also made the logo our favicon</li>
     <li>Added active classes to the navbar so it appears brighter depending on what page you are on.</li>
     <li>Added some of the pictures and captions that are featured in the gallery page.</li>
-    <li>I would fix small things around the website that made it just a tad bit better</li>
+    <li>Fixed small things around the website that made it just a tad bit better</li>
 </ul>
 
 ## Shrey
