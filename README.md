@@ -27,7 +27,6 @@
     <li>I added active classes to the navbar so it appears brighter depending on what page you are on.</li>
     <li>I added some of the pictures and captions that are featured in the gallery page.</li>
     <li>I fixed small things around the website that made it just a tad bit better.</li>
-    <li>Added meta data to each page</li>
 </ul>
 
 ## Shrey
