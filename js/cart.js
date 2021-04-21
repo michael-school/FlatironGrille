@@ -54,8 +54,8 @@ window.load = doShowAll();
 //add item when clicked
 function addItem(itemNum) {
     let itemName = document.getElementById("item" + itemNum).innerText;
-    //add item only if it doesn't already exist
-    if (!localStorage.getItem(itemName)) {
+    //add item only if (1) it doesn't already exist and (2) the delete button is off
+    if (!localStorage.getItem(itemName) && deleteOn == false) {
         let itemPrice = document.getElementById("price" + itemNum).innerText;
         let dataObj = {
             price: itemPrice,
