@@ -4,9 +4,14 @@ var option = {
     autohide: false
 };
 
-function Toasty() {
-    //clear form
+//reset form
+function reset(){
     document.getElementById("contact-form").reset();
+}
+
+function Toasty() {
+    //clear form after delay (so it clears after form is submitted)
+    setTimeout(() => { reset(); }, 50);
     //toast
     var toastHTMLElement = document.getElementById("liveToast");
     var toastElement = new bootstrap.Toast(toastHTMLElement, option);
