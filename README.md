@@ -37,7 +37,7 @@
     <li>Designed, created and enhanced the looks functionality of the food menu, as well as adding all content to the "Spirits" and "Cocktails" sections of the drink menu</li>
     <li>Designed and created the outline and content of the "Order" page (Michael gave functionality)</li>
     <li>Designed and created "Contact Us" page and added a contact form with a Google Maps iFrame displaying the location of Flatiron Grille</li>
-    <li>Designed, created, and gave general functionality to the "Gallery" page (added "click to enlarge")</li>
+    <li>Designed, created, and gave general functionality to the gallery page (added "click to enlarge")</li>
     <li>Overall, I did much of the refining of the styling and appearance of the website.</li>
 </ul>
 </ul>
