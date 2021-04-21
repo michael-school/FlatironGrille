@@ -5,7 +5,7 @@ function doShowAll() {
     var i = 0;
     for (i = 0; i <= localStorage.length - 1; i++) {
         key = localStorage.key(i);
-        let dataObj = JSON.parse(localStorage.getItem(key));
+        let dataObj = JSON.parse(localStorage.getItem(key)); //parse the stringified price and quantity
         //create buttons for quantity
         let minusButton = `<button class=" btn-outline-primary" onclick="subtractOne('${key}')">-</button>`;
         let plusButton = `<button class=" btn-outline-primary" onclick="addOne('` + key + `')">+</button>`;
@@ -13,11 +13,14 @@ function doShowAll() {
         list += '<tr class="foodRow"><td class="cartItemName">' + key + "</td>\n<td>" +
             dataObj.price + "</td>\n<td>" + minusButton + dataObj.quantity + plusButton + "</td></tr>\n";
     }
-    //If no item exists in the cart, don't show the headers
+
+    //create table
+
     if (list == "<tr><th>Item</th><th>Price</th><th>Quantity</th></tr>\n") {
+        //If no item exists in the cart, don't show the headers
         document.getElementById('order').innerHTML = "";
     } else {
-        //Bind the row to HTML table.
+        //Otherwise, bind the row to HTML table.
         document.getElementById('order').innerHTML = list;
     }
     updateTotal();
@@ -34,18 +37,18 @@ function updateTotal() {
     let total = 0.00;
     for (var i = 0; i < localStorage.length; i++) {
         let dataObj = JSON.parse(localStorage.getItem(localStorage.key(i)));
-        priceNum = parseFloat(dataObj.price.replace(/\$/g, ''));
+        priceNum = parseFloat(dataObj.price.replace(/\$/g, '')); //change price to float value
         total = total + priceNum * dataObj.quantity;
     }
-    document.getElementById('cart-total').innerHTML = toUSD.format(total);
+    document.getElementById('cart-total').innerHTML = toUSD.format(total); //total is converted to USD format
 }
 
 //cart item counter
 function updateCounter() {
     if (localStorage.length == 0) {
-        document.getElementById('cart-counter').innerHTML = "";
+        document.getElementById('cart-counter').innerHTML = ""; //don't show the counter if length is 0
     } else {
-        document.getElementById('cart-counter').innerHTML = localStorage.length;
+        document.getElementById('cart-counter').innerHTML = localStorage.length; //counter doesn't count 2 of the same item
     }
 }
 
@@ -57,6 +60,7 @@ function addItem(itemNum) {
     //add item only if (1) it doesn't already exist and (2) the delete button is off
     if (!localStorage.getItem(itemName) && deleteOn == false) {
         let itemPrice = document.getElementById("price" + itemNum).innerText;
+        //stringify price and quantity because local storage can only hold a key and a value
         let dataObj = {
             price: itemPrice,
             quantity: 1
@@ -67,10 +71,12 @@ function addItem(itemNum) {
     }
 }
 
+//clear button
 function clearAll() {
     localStorage.clear();
     doShowAll();
 }
+
 //minus
 function subtractOne(itemName) {
     let dataObj = JSON.parse(localStorage.getItem(itemName));
@@ -95,10 +101,11 @@ function addOne(itemName) {
 //delete item when clicked
 function deleteItem(key) {
     localStorage.removeItem(key);
-    addDeleteFunctionality();
+    deleteBtnFunctionality();
 }
 
-function addDeleteFunctionality() {
+//adds or removes delete functionality depending on "deleteOn"
+function deleteBtnFunctionality() {
     doShowAll();
     //create array of food rows
     let foodRows = document.getElementsByClassName("foodRow");
@@ -135,7 +142,7 @@ let deleteOn = false;
 
 function toggleDelete() {
     deleteOn = deleteOn ? false : true;
-    addDeleteFunctionality();
+    deleteBtnFunctionality();
 }
 
 //initialize popover
