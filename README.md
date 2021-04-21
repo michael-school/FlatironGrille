@@ -21,23 +21,22 @@
 
 ## Christian
 <ul>
-    <li>Made both of the 2 column sections and the fixed background in the home page.</li>
-    <li>Added the "toast" that makes the "Thank you for the message!" notification appear in the contact page, and also made it to where the input boxes reset after clicking the "Send Message" button.</li>
-    <li>Changed the color of the logo a little bit to make it look better, since the logo originally didn't blend in well to the navbar, and the red looked a bit faded, and also made the logo a favicon</li>
-    <li>Added active classes to the navbar so it appears brighter depending on what page you are on.</li>
-    <li>Added some of the pictures and captions that are featured in the gallery page.</li>
-    <li>Fixed small things around the website that made it just a tad bit better</li>
-    <li>Added meta data to each page</li>
+    <li>I made both of the 2 column sections and the fixed background in the home page.</li>
+    <li>I added the toast that makes the "Thank you for the message!" notification appear in the contact page. I also made it to where the input boxes reset after clicking the "Send Message" button.</li>
+    <li>Our logo originally didn't blend in well to the navbar, and the red looked a bit faded so I changed the color of the logo a little bit to make it look better. I also made the logo our favicon.</li>
+    <li>I added active classes to the navbar so it appears brighter depending on what page you are on.</li>
+    <li>I added some of the pictures and captions that are featured in the gallery page.</li>
+    <li>I fixed small things around the website that made it just a tad bit better.</li>
 </ul>
 
 ## Shrey
 <ul>
-    <li>Designed (not created) majority of the home page</li>
-    <li>Designed, created, and ensured functionality of the carousel on the home page</li>
-    <li>Designed and created the footer with added logos and links to Flatiron's social media</li>
-    <li>Designed and helped to create the layout of the food menu, as well as added all content to the "Spirits" and "Cocktails" sections of the drink menu</li>
-    <li>Designed and created "Contact Us" page and added a contact form with a Google Maps iFrame displaying the location of Flatiron Grille</li>
-    <li>Designed, created, and gave general functionality to the gallery page (added "click to enlarge")</li>
+    <li>I designed (not created) majority of the home page.</li>
+    <li>I designed, created, and ensured functionality of the carousel on the home page.</li>
+    <li>I designed and created the footer with added logos and links to Flatiron's social media.</li>
+    <li>I designed and helped create the layout of the food menu and added all of its content. I also added all content to the "Spirits" and "Cocktails" sections of the drink menu.</li>
+    <li>I designed and created "Contact Us" page and added a contact form with a Google Maps iFrame displaying the location of Flatiron Grille.</li>
+    <li>I designed, created, and gave general functionality to the gallery page (added "click to enlarge").</li>
     <li>Overall, I did much of the refining of the styling and appearance of the website.</li>
 </ul>
 
@@ -49,5 +48,5 @@
 The purpose of the online ordering page included in this website was to practice and showcase our skills. In practice, the online ordering page used by Flatiron will be created through an add-on to their Point of Sale system, <a href="https://pos.toasttab.com/products/online-ordering">Toast</a>. Flatiron has already purchased this feature and simply needs help to set it up.
 
 ### Contact Page
-The mailto functionality of the contact form would not be implemented in the final product. Instead, it would use php to send an email to a manager at Flatiron containing the data from the form. The user would not be required to manually send the email.
+The mail-to functionality of the contact form would not be implemented in the final product. Instead, it would use php to send an email to a manager at Flatiron containing the data from the form. The user would not be required to manually send the email.
 
