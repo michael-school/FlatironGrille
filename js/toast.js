@@ -1,7 +1,7 @@
 //set specifications for the toast
 var option = {
     Animation: true,
-    delay: 5000
+    autohide: false
 };
 
 function Toasty() {
