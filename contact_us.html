@@ -66,9 +66,9 @@
                     out the form below and send a message! <br>
                     We'd love to hear from you!</h4>
             </div>
-            <form id="contact-form" action="mailto:michael.crockett@students.jmcss.org" method="GET">
+            <form id="contact-form" action="mailto:michael.crockett@students.jmcss.org" enctype="text/plain" target="_blank" onsubmit="Toasty();" method="POST">
                 <div class="row input-container">
-                    <div class="col-xs-12">
+                    <div class="col-12">
                         <div class="styled-input wide">
                             <input name="subject" type="text" required />
                             <label>Name</label>
@@ -79,21 +79,21 @@
                             <input type="email" required />
                             <label>Email</label>
                         </div>
-                    </div>
+                    </div class="col-12:">
                     <div class="col-md-6 col-sm-12">
                         <div class="styled-input" style="float:right;">
                             <input type="telephone" required />
                             <label>Phone Number</label>
                         </div>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-12">
                         <div class="styled-input wide">
                             <textarea name="body" required></textarea>
                             <label>Message</label>
                         </div>
                     </div>
-                    <div class="col-xs-12">
-                        <button type="submit" value="Send" class="btn btn-lrg submit-btn" onclick="Toasty( )">Send
+                    <div>
+                        <button type="submit" value="Send" class="btn btn-lrg submit-btn">Send
                             Message</button>
                         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
                             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
