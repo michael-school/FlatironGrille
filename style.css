@@ -711,103 +711,96 @@ tr.delete:hover {
 /* Media Queries (Mobile First) */
 
 @media screen and (min-width: 576px) {
-
     /*carousel*/
-    .carousel-caption h1 {
-        font-size: 3em;
-    }
+.carousel-caption h1 {
+    font-size: 3em;
+}
 
-    .carousel-caption h3 {
-        font-size: 1.3em;
-    }
+.carousel-caption h3 {
+    font-size: 1.3em;
+}
 
-    .carousel-caption button {
-        margin-top: .7em;
-        font-size: 1.1em;
-        padding: .4em;
-    }
+.carousel-caption button {
+    margin-top: .7em;
+    font-size: 1.1em;
+    padding: .4em;
+}
 
-    /*Wagner Wine Heading */
-    #wagner{
-        width: 60%;
-    }
+/*Wagner Wine Heading */
+#wagner{
+    width: 60%;
+}
 }
 
 @media screen and (min-width: 700px) {
+/* page titles */
+h1.title {
+    font-size: 72px;
+}
 
-    /* page titles */
-    h1.title {
-        font-size: 72px;
-    }
-
-
-    .modal-content {
-        width: 80%;
-    }
+.modal-content {
+    width: 80%;
+}
 }
 
 @media screen and (min-width: 768px) {
-    .styled-input {
-        width: 293px;
-    }
-
-    .submit-btn {
-        width: auto;
-        float: inherit;
-        text-align: inherit;
-    }
-    /*Wagner Wine Heading */
-    #wagner{
-        width: 50%;
-    }
+.styled-input {
+    width: 293px;
 }
 
+.submit-btn {
+    width: auto;
+    float: inherit;
+    text-align: inherit;
+}
+
+/*Wagner Wine Heading */
+#wagner{
+    width: 50%;
+}
+}
 
 @media screen and (min-width: 820px) {
-
-    /*carousel*/
-    .carousel-caption h1 {
-        font-size: 5em;
-    }
-
-    .carousel-caption h3 {
-        font-size: 2em;
-    }
-
-    .carousel-caption button {
-        margin-top: .7em;
-        font-size: 1.8em;
-        padding: .3em;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+/*carousel*/
+.carousel-caption h1 {
+    font-size: 5em;
 }
 
+.carousel-caption h3 {
+    font-size: 2em;
+}
 
-
+.carousel-caption button {
+    margin-top: .7em;
+    font-size: 1.8em;
+    padding: .3em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+}
 
 @media screen and (min-width: 992px) {
-
     /* Moving the Dessert Card on events page to a different column  */
-    #dessertsSm {
-        display: none;
-    }
+#dessertsSm {
+    display: none;
+}
 
-    #dessertsLg {
-        display: inherit;
-    }
+#dessertsLg {
+    display: inherit;
+}
 
-    /*wineglass on drinks page */
-    #wineglass {
-        width: 30%;
-    }
+/*wineglass on drinks page */
+#wineglass {
+    width: 30%;
+}
 
-    /*turn off dropdown for larger screens*/
-    .menu-control .dropdown-toggle {
-        display: none;
-    }
-    /*Wagner Wine Heading */
-    #wagner{
-        width: 15em;
-    }
+/*turn off dropdown for larger screens*/
+.menu-control .dropdown-toggle {
+    display: none;
+}
+
+/*Wagner Wine Heading */
+#wagner{
+    width: 15em;
+}
 }
