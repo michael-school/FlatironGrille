@@ -10,7 +10,7 @@
 }
 body {
     background-color: #000;
-    font-family: comfortaaMedium, cursive;
+    font-family: comfortaaMedium, sans-serif;
 }
 
 /*--- Navigation Bar --*/
@@ -42,7 +42,7 @@ footer {
 }
 
 footer p {
-    font-family: comfortaaLight, cursive;
+    font-family: comfortaaLight, sans-serif;
 }
 
 footer .logo {
@@ -159,7 +159,7 @@ button:focus {
 .column-text {
     color: white;
     padding-top: 1rem;
-    font-family: comfortaaLight, cursive;
+    font-family: comfortaaLight, sans-serif;
 }
 
 p>a {
@@ -213,7 +213,7 @@ figure {
 
 
 .contact h4 {
-    font-family: comfortaaLight, cursive;
+    font-family: comfortaaLight, sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
@@ -222,7 +222,7 @@ figure {
 }
 
 .input-container label {
-    font-family: comfortaaLight, cursive;
+    font-family: comfortaaLight, sans-serif;
 }
 
 /*--- Events ---*/
@@ -257,7 +257,7 @@ figure {
 }
 
 h1.title {
-    font-family: comfortaaMedium, cursive;
+    font-family: comfortaaMedium, sans-serif;
     font-weight: 600;
     font-size: 50px;
     color: white;
